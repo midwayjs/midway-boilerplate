@@ -1,0 +1,21 @@
+{
+  "name": "midway-boilerplate",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "midway-bin": "1"
+  },
+  "scripts": {
+    "lint": "eslint bin lib test",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "npm run lint && midway-bin test",
+    "cov": "midway-bin cov",
+    "ci": "npm run lint && midway-bin cov",
+    "autod": "midway-bin autod"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "Harry Chen <czy88840616@gmail.com>"
+}
