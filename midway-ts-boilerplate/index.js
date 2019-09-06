@@ -9,6 +9,7 @@ module.exports = {
   },
   author: {
     desc: 'project author',
+    default: 'anonymous'
   },
   keys: {
     desc: 'cookie security keys',
