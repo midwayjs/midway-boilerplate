@@ -1,16 +1,23 @@
 {
   "name": "midway-boilerplate",
   "version": "1.0.0",
-  "dependencies": {
-  },
   "devDependencies": {
-    "midway-bin": "1"
+    "@types/chai": "^4.1.7",
+    "@types/lodash": "^4.14.119",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "fs-extra": "^8.1.0",
+    "lerna": "^3.14.1",
+    "lerna-relinker": "^1.4.0",
+    "light-generator": "^1.1.0",
+    "midway-bin": "1",
+    "typescript": "^3.5.1"
   },
   "scripts": {
-    "lint": "eslint bin lib test",
+    "lint": "eslint bin lib midway-demo-boilerplate/test",
     "lint-fix": "npm run lint -- --fix",
-    "test": "npm run lint && midway-bin test",
-    "cov": "midway-bin cov",
+    "test": "lerna run test",
+    "cov": "lerna run cov",
     "ci": "npm run lint && midway-bin cov",
     "autod": "midway-bin autod"
   },

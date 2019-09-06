@@ -7,7 +7,7 @@
     "url": "http://github.com/midwayjs/midway-boilerplate.git"
   },
   "scripts": {
-    "test": "../node_modules/.bin/midway-bin test"
+    "test": "../node_modules/.bin/midway-bin test --timeout=120000"
   },
   "boilerplateConfig": {
     "root": "boilerplate",

@@ -14,7 +14,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "rootDirs": ["/src", "/test", "/mock", "./typings"],
+    "rootDirs": ["/src",
+      "/midway-demo-boilerplate/test", "/mock", "./typings"],
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es2016"

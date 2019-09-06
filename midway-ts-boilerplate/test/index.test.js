@@ -4,6 +4,8 @@ const {LightGenerator} = require('light-generator');
 const path = require('path');
 const fse = require('fs-extra');
 const assert = require('assert');
+const cp = require('child_process');
+
 
 describe('/test/index.test.js', () => {
 
@@ -14,7 +16,7 @@ describe('/test/index.test.js', () => {
   });
 
   after(async () => {
-    // await fse.remove(targetPath);
+    await fse.remove(targetPath);
   });
 
   it('should generate boilerplate', async () => {
@@ -37,6 +39,16 @@ describe('/test/index.test.js', () => {
 
     contents = fse.readFileSync(path.join(targetPath, 'src/config/config.default.ts'), 'utf-8');
     assert(!/\{\{/.test(contents));
+  });
+
+  it('test generate path', () => {
+    cp.execSync('npm install', {
+      cwd: targetPath,
+    });
+
+    cp.execSync('npm run test', {
+      cwd: targetPath,
+    });
   });
 
 });
