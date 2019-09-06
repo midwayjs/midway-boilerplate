@@ -1,10 +1,9 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "declaration": false,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "incremental": true,
     "inlineSourceMap": true,
     "module": "commonjs",
     "newLine": "lf",
@@ -16,8 +15,7 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "stripInternal": true,
-    "target": "ES2017",
-    "tsBuildInfoFile": ".vscode/.tsbuildinfo"
+    "target": "ES2017"
   },
   "exclude": [
     "app/public",
