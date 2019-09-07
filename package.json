@@ -17,7 +17,7 @@
     "lint": "eslint bin lib midway-demo-boilerplate/test",
     "lint-fix": "npm run lint -- --fix",
     "bootstrap": "lerna run bootstrap",
-    "publish": "lerna run publish",
+    "publish": "lerna publish",
     "test": "lerna run test",
     "cov": "lerna run cov",
     "ci": "npm run lint && midway-bin cov",
