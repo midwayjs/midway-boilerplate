@@ -1,0 +1,21 @@
+{
+  "name": "midway-boilerplate-ts-strict",
+  "version": "1.0.0",
+  "author": "waitingsong <waiting@xiaozhong.biz>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "scripts": {
+    "test": "../node_modules/.bin/midway-bin test --timeout=120000"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "replaceParameter": "index.js",
+    "replaceFile": [
+      "_package.json",
+      "*.md",
+      "src/config/config.default.ts"
+    ]
+  }
+}

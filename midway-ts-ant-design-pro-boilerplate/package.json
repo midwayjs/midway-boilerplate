@@ -1,0 +1,21 @@
+{
+  "name": "midway-boilerplate-ts-antd",
+  "version": "1.0.0",
+  "author": "tw93 <tw93@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "scripts": {
+    "test": "../node_modules/.bin/midway-bin test --timeout=120000"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "replaceParameter": "index.js",
+    "replaceFile": [
+      "_package.json",
+      "*.md",
+      "server/src/config/config.default.ts"
+    ]
+  }
+}
