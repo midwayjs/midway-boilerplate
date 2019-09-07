@@ -1,0 +1,20 @@
+{
+  "name": "midway-boilerplate-demo",
+  "version": "1.0.0",
+  "author": "Harry Chen <czy88840616@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "scripts": {
+    "test": "../node_modules/.bin/midway-bin test"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "replaceParameter": "index.js",
+    "replaceFile": [
+      "README.md",
+      "src/config/config.default.ts"
+    ]
+  }
+}
