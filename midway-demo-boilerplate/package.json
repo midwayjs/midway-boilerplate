@@ -14,7 +14,8 @@
     "replaceParameter": "index.js",
     "replaceFile": [
       "README.md",
-      "src/config/config.default.ts"
+      "src/config/config.default.ts",
+      "_package.json"
     ]
   }
 }
