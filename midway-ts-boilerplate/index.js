@@ -3,9 +3,11 @@
 module.exports = {
   name: {
     desc: 'project name',
+    default: 'my_first_midway_project'
   },
   description: {
     desc: 'project description',
+    default: ''
   },
   author: {
     desc: 'project author',
