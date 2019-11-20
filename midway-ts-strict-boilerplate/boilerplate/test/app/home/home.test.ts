@@ -21,6 +21,16 @@ describe(filename, () => {
       .get('/')
       .expect(200)
 
-    assert(app.config.welcomeMsg && ret.res.text.startsWith(app.config.welcomeMsg))
+    const msg: string = ret.text
+    assert(msg && msg.includes('Hello midwayjs!'))
+  })
+
+  it('should GET /ping', async () => {
+    const ret = await app.httpRequest()
+      .get('/ping')
+      .expect(200)
+
+    const msg: string = ret.text
+    assert(msg && msg === 'OK')
   })
 })
