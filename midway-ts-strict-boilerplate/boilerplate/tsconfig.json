@@ -16,7 +16,7 @@
     "skipLibCheck": true,
     "strict": true,
     "stripInternal": true,
-    "target": "ES2017",
+    "target": "ES2018",
     "tsBuildInfoFile": ".vscode/.tsbuildinfo"
   },
   "include": [

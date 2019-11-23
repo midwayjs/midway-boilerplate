@@ -14,5 +14,10 @@ export class HomeController {
     ctx.body = `${this.welcomeMsg} - ${ctx.api.reqTimeStr}`
   }
 
+  @get('/ping')
+  public ping(ctx: Context): void {
+    ctx.body = 'OK'
+  }
+
 }
 

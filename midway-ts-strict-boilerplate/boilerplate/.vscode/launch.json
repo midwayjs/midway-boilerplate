@@ -25,10 +25,37 @@
       ],
       "runtimeExecutable": "npm",
       "skipFiles": [
-        // "${workspaceFolder}/node_modules/**/*.js",
+        // "${workspaceFolder}/../../node_modules/rxjs/**/*.js",
         "${workspaceFolder}/node_modules/rxjs/**/*.js",
         "<node_internals>/**/*.js"
       ]
-    }
+    },
+    {
+      "name": "Miday Test",
+      "type": "node",
+      "autoAttachChildProcesses": true,
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "local",
+        "TS_NODE_PROJECT": "test/tsconfig.json",
+      },
+      "port": 9229,
+      "protocol": "auto",
+      "request": "launch",
+      "restart": true,
+      "runtimeArgs": [
+        "run",
+        "devtest",
+        "--",
+        "--inspect-brk"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        // "${workspaceFolder}/../../node_modules/rxjs/**/*.js",
+        "${workspaceFolder}/node_modules/rxjs/**/*.js",
+        "<node_internals>/**/*.js"
+      ],
+      "timeout": 60000
+    },
   ]
 }
