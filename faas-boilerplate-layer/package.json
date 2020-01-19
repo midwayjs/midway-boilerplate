@@ -1,0 +1,12 @@
+{
+  "name": "@midwayjs/faas-boilerplate-layer",
+  "version": "1.0.1",
+  "boilerplateConfig": {
+    "root": "boilerplate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "license": "MIT"
+}

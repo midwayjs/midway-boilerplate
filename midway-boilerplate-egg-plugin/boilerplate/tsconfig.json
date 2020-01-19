@@ -11,8 +11,7 @@
     "noUnusedLocals": true,
     "stripInternal": true,
     "pretty": true,
-    "declaration": true,
-    "outDir": "dist"
+    "declaration": true
   },
   "exclude": [
     "dist",

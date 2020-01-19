@@ -1,0 +1,14 @@
+service: serverless-hello-world
+
+provider:
+  name: ''
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          method: get
+
+package:
+  artifact: code.zip
