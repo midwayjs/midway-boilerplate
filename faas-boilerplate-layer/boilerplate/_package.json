@@ -1,0 +1,22 @@
+{
+  "name": "layer-sample",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "typings": "dist/index.d.ts",
+  "dependencies": {
+    "@midwayjs/runtime-engine": "1"
+  },
+  "devDependencies": {
+    "midway-bin": "1"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "build": "midway-bin build -c",
+    "test": "NODE_ENV=test midway-bin test --ts --full-trace",
+    "cov": "NODE_ENV=unittest midway-bin cov --ts",
+    "clean": "midway-bin clean",
+    "autod": "midway-bin autod"
+  }
+}
