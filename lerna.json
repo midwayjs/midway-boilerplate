@@ -1,7 +1,7 @@
 {
   "packages": [
-    "midway-*",
-    "faas-*"
+    "faas-*",
+    "midway-*"
   ],
   "command": {
     "bootstrap": {
@@ -10,5 +10,5 @@
       ]
     }
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }

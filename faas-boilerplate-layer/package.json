@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs/faas-boilerplate-layer",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "boilerplateConfig": {
     "root": "boilerplate"
   },
