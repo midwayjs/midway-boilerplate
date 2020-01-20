@@ -17,5 +17,9 @@
       "README.md",
       "src/config/config.default.ts"
     ]
-  }
+  },
+  "files": [
+    "boilerplate",
+    "index.js"
+  ]
 }

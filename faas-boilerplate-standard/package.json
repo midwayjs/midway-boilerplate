@@ -14,5 +14,8 @@
   "scripts": {
     "test": "../node_modules/.bin/midway-bin test --timeout=120000"
   },
+  "files": [
+    "boilerplate"
+  ],
   "license": "MIT"
 }

@@ -17,5 +17,9 @@
       "*.md",
       "server/src/config/config.default.ts"
     ]
-  }
+  },
+  "files": [
+    "boilerplate",
+    "index.js"
+  ]
 }

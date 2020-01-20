@@ -17,5 +17,9 @@
       "src/config/config.default.ts",
       "_package.json"
     ]
-  }
+  },
+  "files": [
+    "boilerplate",
+    "index.js"
+  ]
 }
