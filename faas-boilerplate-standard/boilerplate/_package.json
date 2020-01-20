@@ -7,6 +7,10 @@
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
-    "@midwayjs/invoke": "*"
+    "@midwayjs/serverless-invoke": "*"
+  },
+  "scripts": {
+    "build": "f package --skipZip",
+    "test": "f test"
   }
 }

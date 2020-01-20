@@ -9,7 +9,7 @@ I think you are ready, if not, please execute the following statement.
 ## Usage
 
 - 1、run `npm install` to install your project dependencies
-- 2、run `npm run test` to test
+- 2、run `f test` or `npm run test` to test
 - 2、run `f deplpy` to publish cloud platform
 
 

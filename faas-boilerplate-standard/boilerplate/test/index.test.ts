@@ -1,4 +1,4 @@
-import { invoke } from '@midwayjs/invoke';
+import { invoke } from '@midwayjs/serverless-invoke';
 import * as assert from 'assert';
 import { join } from 'path';
 
@@ -8,6 +8,6 @@ describe('/test/index.test.ts', () => {
       functionName: 'index',
       functionDir: join(__dirname, '../')
     });
-    assert(/hello world/.test(result.body));
+    assert(/hello world/.test(result));
   });
 });
