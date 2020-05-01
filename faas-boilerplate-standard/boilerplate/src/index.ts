@@ -1,4 +1,4 @@
-import { Func, Inject, Provide,  } from '@midwayjs/decorator';
+import { Func, Inject, Provide } from '@midwayjs/decorator';
 import { FaaSContext, FunctionHandler } from '@midwayjs/faas';
 
 @Provide()
