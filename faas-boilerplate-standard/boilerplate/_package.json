@@ -11,6 +11,8 @@
   },
   "scripts": {
     "build": "f package --skipZip",
-    "test": "f test"
+    "test": "f test",
+    "dev": "f invoke -p",
+    "debug": "f invoke -p --debug"
   }
 }

@@ -1,10 +1,11 @@
-import { FaaSContext, func, inject, provide, FunctionHandler } from '@midwayjs/faas';
+import { Func, Inject, Provide } from '@midwayjs/decorator';
+import { FaaSContext, FunctionHandler } from '@midwayjs/faas';
 
-@provide()
-@func('index.handler')
+@Provide()
+@Func('index.handler')
 export class IndexService implements FunctionHandler {
 
-  @inject()
+  @Inject()
   ctx: FaaSContext;  // context
 
   async handler() {

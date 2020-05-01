@@ -8,6 +8,6 @@ describe('/test/index.test.ts', () => {
       functionName: 'index',
       functionDir: join(__dirname, '../')
     });
-    assert(/hello world/.test(result));
+    assert(/hello world/.test(JSON.stringify(result)));
   });
 });

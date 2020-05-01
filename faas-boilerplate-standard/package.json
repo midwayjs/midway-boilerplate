@@ -12,7 +12,8 @@
     "url": "http://github.com/midwayjs/midway-boilerplate.git"
   },
   "scripts": {
-    "test": "../node_modules/.bin/midway-bin test --timeout=120000"
+    "test": "../node_modules/.bin/midway-bin test --timeout=120000",
+    "cov": "../node_modules/.bin/midway-bin cov --timeout=120000"
   },
   "files": [
     "boilerplate"
