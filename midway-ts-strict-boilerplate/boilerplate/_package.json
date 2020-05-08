@@ -36,7 +36,8 @@
     "start": "egg-scripts start --daemon --title=egg-server-{{name}} --framework=midway --ts",
     "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
     "stop": "egg-scripts stop --title=egg-server-{{name}}",
-    "test": "npm run lint && npm run devtest"
+    "test": "npm run lint && npm run devtest",
+    "autod": "midway-bin autod"
   },
   "ci": {
     "version": "10, 12"
