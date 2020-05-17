@@ -15,3 +15,5 @@ package-lock.json
 .nodejs-cache
 AUTHORS
 .serverless
+.env_temp
+.faas_debug_tmp
