@@ -4,8 +4,8 @@
 
 ## Development
 
-- 在最外层根目录执行即可，启动后使用 <http://localhost:6001/>打开提示即可，详细可见 [Midway 和 Ant Design Pro 前后端分离方案](https://yuque.antfin-inc.com/midwayjs/midway6/midway-ant-design-pro)
-- 更多命令请参照各自 package.json 对应脚本，关于详细的开发教程可以[Ant Design Pro 4](https://pro.ant.design/docs/getting-started-cn)和 [Midway6 TS](https://midway.alibaba-inc.com/midway#/midway/github/midwayjs/midway/docs/guide)
+- 在最外层根目录执行即可，启动后使用 <http://localhost:6001/>打开提示即可
+- 更多命令请参照各自 package.json 对应脚本，关于详细的开发教程可以[Ant Design Pro 4](https://pro.ant.design/docs/getting-started-cn)和 Midway6 TS
 
   ```bash
   $ npm i             //汇总安装前后端依赖
