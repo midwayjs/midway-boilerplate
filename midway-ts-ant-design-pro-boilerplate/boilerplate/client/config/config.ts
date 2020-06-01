@@ -1,6 +1,6 @@
+import slash from 'slash2';
 import { IConfig, IPlugin } from 'umi-types';
 import defaultSettings from './defaultSettings'; // https://umijs.org/config/
-import slash from 'slash2';
 
 const { pwa } = defaultSettings;
 
@@ -52,7 +52,7 @@ const plugins: IPlugin[] = [
   [
     'umi-plugin-console',
     {
-      onDevCompileDone:'\n\n⛷  调试服务已成功启动\n🏄 如果是前后端本地开发请打开 http://localhost:6001/ \n',
+      onDevCompileDone:'\n\n⛷  调试服务已成功启动\n🏄 如果是前后端本地开发请打开 http://localhost:7001/ \n',
     }
   ]
 ];

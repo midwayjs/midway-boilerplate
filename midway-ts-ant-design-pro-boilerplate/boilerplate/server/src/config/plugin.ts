@@ -1,6 +1,7 @@
-// had enabled by midway
-
-exports.nunjucks = true;
+exports.nunjucks ={
+  enable: true,
+  package: 'egg-view-nunjucks',
+};
 
 exports.assets = {
   enable: true,

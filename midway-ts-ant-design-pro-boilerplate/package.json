@@ -1,6 +1,6 @@
 {
   "name": "midway-boilerplate-ts-antd",
-  "version": "2.0.0-beta",
+  "version": "1.1.4",
   "author": "tw93 <tw93@qq.com>",
   "repository": {
     "type": "git",
@@ -15,7 +15,9 @@
     "replaceFile": [
       "_package.json",
       "*.md",
-      "server/src/config/config.default.ts"
+      "server/src/config/config.default.ts",
+      "server/package.json",
+      "client/package.json"
     ]
   },
   "files": [
