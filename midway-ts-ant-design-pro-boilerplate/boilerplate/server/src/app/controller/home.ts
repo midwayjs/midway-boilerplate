@@ -1,4 +1,4 @@
-import { Context, inject, controller, get, provide } from 'midway';
+import { Context, controller, get, inject, provide } from 'midway';
 
 @provide()
 @controller('/')
@@ -9,6 +9,6 @@ export class HomeController {
 
   @get('/')
   async index() {
-    await this.ctx.render('index');
+    await this.ctx.render('index.tpl');
   }
 }

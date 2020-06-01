@@ -1,14 +1,8 @@
-import { EggPlugin } from 'midway';
-export default {
-  static: true, // default is true
+// had enabled by midway
 
-  nunjucks: {
-    enable: true,
-    package: 'egg-view-nunjucks',
-  },
+exports.nunjucks = true;
 
-  assets: {
-    enable: true,
-    package: 'egg-view-assets',
-  },
-} as EggPlugin;
+exports.assets = {
+  enable: true,
+  package: 'egg-view-assets'
+};

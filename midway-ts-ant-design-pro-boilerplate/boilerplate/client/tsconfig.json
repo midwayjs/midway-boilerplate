@@ -1,35 +1,36 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
     "outDir": "build/dist",
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true,
+    "baseUrl": ".",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "strict": true,
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "rootDirs": ["/src",
-      "/midway-demo-boilerplate/test", "/mock", "./typings"],
-    "sourceMap": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "target": "es2016"
+    }
   },
-  "include": ["./src"],
   "exclude": [
-    "acceptance-tests",
-    "build",
-    "jest",
     "node_modules",
+    "build",
+    "dist",
     "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
     "src/setupTests.ts",
     "tslint:latest",
-    "tslint-config-prettier",
-    "webpack"
+    "tslint-config-prettier"
   ]
 }
