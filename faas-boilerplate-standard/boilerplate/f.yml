@@ -1,7 +1,7 @@
 service: serverless-hello-world
 
 provider:
-  name: ''                            # cloud platform name
+  name: aliyun                            # cloud platform name
 
 functions:
   index:                              # functionName
