@@ -4,23 +4,23 @@
   "description": "{{description}}",
   "author": "{{author}}",
   "scripts": {
+    "client-install": "cd client && npm install --no-package-lock",
+    "server-install": "cd server && npm install --no-package-lock",
+    "postinstall": "npm run client-install && npm run server-install",
     "start": "cd server && npm run start",
-    "build": "npm run clientbuild && npm run serverbuild",
-    "lint": "npm run clientLint && npm run serverLint",
-    "startclient": "cd client && npm run start",
-    "clientInstall": "cd client && npm install --no-package-lock",
-    "serverIntall": "cd server && npm install --no-package-lock",
-    "postinstall": "npm run clientInstall && npm run serverIntall",
-    "serverbuild": "cd server && npm run build",
-    "clientbuild": "cd client && npm run build",
-    "clientLint": "cd client && npm run lint",
-    "serverLint": "cd server && npm run lint"
+    "client-start": "cd client && npm run start",
+    "build": "npm run postinstall && npm run client-build && npm run server-build",
+    "server-build": "cd server && npm run own-build",
+    "client-build": "cd client && npm run build",
+    "client-lint": "cd client && npm run lint",
+    "server-lint": "cd server && npm run lint",
+    "lint": "npm run client-lint && npm run server-lint"
   },
+  "license": "MIT",
   "keywords": [
     "node",
     "react",
     "midway",
-    "typeScript",
-    "ant-design-pro"
+    "TypeScript"
   ]
 }

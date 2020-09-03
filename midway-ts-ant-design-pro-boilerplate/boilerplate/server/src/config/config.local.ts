@@ -1,22 +1,26 @@
 import * as path from 'path';
 
-export default (appInfo: any) => {
-  const config: any = {};
-
-  config.assets = {
-    publicPath: 'public',
-    devServer: {
-      autoPort: true,
-      command: 'cross-env umi dev --port={port}',
-      debug: true,
-      portPath: path.join(appInfo.baseDir, '../run/assetsPort'),
-      env: {
-        APP_ROOT: path.join(__dirname, '../../../client'),
-        BROWSER: 'none',
-        SOCKET_SERVER: 'http://127.0.0.1:{port}'
-      }
+export const assets = {
+  publicPath: '/public',
+  devServer: {
+    port: 8000,
+    command: 'npm run client-start',
+    debug: true,
+    env: {
+      APP_ROOT: path.join(__dirname, '../../../client'),
+      BROWSER: 'none',
+      SOCKET_SERVER: 'http://127.0.0.1:8000',
     }
-  };
+  }
+};
 
-  return config;
+export const development = {
+  watchDirs: [
+    'app',
+    'config',
+    'app.ts',
+    'agent.ts',
+    'interface.ts',
+  ],
+  overrideDefault: true,
 };

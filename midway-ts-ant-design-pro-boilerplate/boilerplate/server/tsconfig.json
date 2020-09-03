@@ -1,17 +1,13 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "alwaysStrict": true,
-    "charset": "utf8",
-    "declaration": false,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "inlineSourceMap": true,
     "module": "commonjs",
     "newLine": "lf",
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "noUnusedLocals": true,
     "outDir": "dist",
     "pretty": true,
@@ -22,8 +18,8 @@
     "target": "ES2018"
   },
   "exclude": [
+    "app/view",
     "app/public",
-    "app/views",
     "dist",
     "node_modules",
     "test",
