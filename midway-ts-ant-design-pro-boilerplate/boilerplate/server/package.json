@@ -1,5 +1,5 @@
 {
-  "name": "{{name}}",
+  "name": "midway-antd-pro-projet",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -27,17 +27,17 @@
     "node": ">=10.16.0"
   },
   "scripts": {
-    "debug": "NODE_ENV=local midway-bin debug --ts",
+    "debug": "cross-env NODE_ENV=local midway-bin debug --ts",
     "lint": "tslint -c tslint.json --project .",
-    "cov": "midway-bin cov --ts",
-    "ci": "midway-bin cov --ts",
-    "build": "cd .. && npm run build",
-    "own-build":"midway-bin build -c",
-    "start": "NODE_ENV=local midway-bin dev --ts",
-    "client-start": "cd .. && npm run client-start",
-    "start_build": "npm run build && NODE_ENV=development midway-bin dev",
-    "clean": "midway-bin clean",
-    "lint-fix": "npm run lint -- --fix"
+    "cov": "cross-env midway-bin cov --ts",
+    "ci": "cross-env midway-bin cov --ts",
+    "build": "cross-env cd .. && npm run build",
+    "own-build":"cross-env midway-bin build -c",
+    "start": "cross-env NODE_ENV=local midway-bin dev --ts",
+    "client-start": "cross-env cd .. && npm run client-start",
+    "start_build": "cross-env npm run build && NODE_ENV=development midway-bin dev",
+    "clean": "cross-env midway-bin clean",
+    "lint-fix": "cross-env npm run lint -- --fix"
   },
   "ci": {
     "version": "10, 12"

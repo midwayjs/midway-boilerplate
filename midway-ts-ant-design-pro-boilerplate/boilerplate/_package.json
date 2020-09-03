@@ -1,8 +1,8 @@
 {
-  "name": "{{name}}",
+  "name": "midway-antd-pro-projet",
   "version": "1.0.0",
-  "description": "{{description}}",
-  "author": "{{author}}",
+  "description": "midway antd pro projet",
+  "author": "",
   "scripts": {
     "client-install": "cd client && npm install --no-package-lock",
     "server-install": "cd server && npm install --no-package-lock",
