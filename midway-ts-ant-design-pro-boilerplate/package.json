@@ -1,6 +1,6 @@
 {
   "name": "midway-boilerplate-ts-antd",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "author": "tw93 <tw93@qq.com>",
   "repository": {
     "type": "git",
@@ -23,5 +23,6 @@
   "files": [
     "boilerplate",
     "index.js"
-  ]
+  ],
+  "gitHead": "3ba3ac8716180a7bd18ef4607a3524a4eb3b88c9"
 }
