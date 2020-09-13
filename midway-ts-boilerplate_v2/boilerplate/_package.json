@@ -7,7 +7,8 @@
     "@midwayjs/web": "^2.0.0",
     "@midwayjs/decorator": "^2.2.0",
     "egg": "^2.0.0",
-    "egg-scripts": "^2.10.0"
+    "egg-scripts": "^2.10.0",
+    "midway": "^2.2.0"
   },
   "devDependencies": {
     "@midwayjs/mock": "2",
@@ -30,8 +31,8 @@
     "clean": "midway-bin clean",
     "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
     "debug": "cross-env NODE_ENV=local midway-bin debug --ts",
-    "test": "midway-bin test --ts",
-    "cov": "midway-bin cov --ts",
+    "test": "jest",
+    "cov": "jest cov",
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",

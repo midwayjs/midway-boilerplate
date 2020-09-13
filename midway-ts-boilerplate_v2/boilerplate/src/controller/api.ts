@@ -1,4 +1,4 @@
-import { Inject, Controller, Post, Provide } from '@midwayjs/decorator';
+import { Inject, Controller, Post, Provide, Query } from '@midwayjs/decorator';
 import { IMidwayWebContext } from '@midwayjs/web';
 import { UserService } from '../service/user';
 
@@ -13,8 +13,7 @@ export class APIController {
   userService: UserService;
 
   @Post('/get_user')
-  async getUser() {
-    const id: number = this.ctx.query.uid;
+  async getUser(@Query('uid') id) {
     const user = await this.userService.getUser({id});
     return {success: true, message: 'OK', data: user};
   }

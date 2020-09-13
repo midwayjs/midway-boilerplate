@@ -1,4 +1,4 @@
-import { createApp, closeApp, createHttpRequest } from '@midwayjs/mock';
+import { createApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Framework } from '@midwayjs/web';
 import * as assert from 'assert';
 
@@ -16,10 +16,10 @@ describe('test/controller/home.test.ts', () => {
     expect(result.body.message).toBe('OK');
     
     // or use assert
-    assert.deepEqual(result.status, 200);
-    assert.deepEqual(result.body.data.id, 123);
+    assert.deepStrictEqual(result.status, 200);
+    assert.deepStrictEqual(result.body.data.id, '123');
 
     // close app
-    await closeApp(app);
+    await close(app);
   });
 });

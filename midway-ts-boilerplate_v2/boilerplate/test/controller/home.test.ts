@@ -1,4 +1,4 @@
-import { createApp, closeApp, createHttpRequest } from '@midwayjs/mock';
+import { createApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Framework } from '@midwayjs/web';
 import * as assert from 'assert';
 
@@ -16,11 +16,11 @@ describe('test/controller/home.test.ts', () => {
     expect(result.text).toBe('Welcome to midwayjs!');
 
     // or use assert
-    assert.deepEqual(result.status, 200);
-    assert.deepEqual(result.text, 'Welcome to midwayjs!');
+    assert.deepStrictEqual(result.status, 200);
+    assert.deepStrictEqual(result.text, 'Welcome to midwayjs!');
 
     // close app
-    await closeApp(app);
+    await close(app);
   });
 
 });
