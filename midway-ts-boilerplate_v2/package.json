@@ -1,0 +1,26 @@
+{
+  "name": "midway-boilerplate-typescript-v2",
+  "version": "1.0.0",
+  "author": "Harry Chen <czy88840616@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "scripts": {
+    "test": "../node_modules/.bin/midway-bin test --timeout=120000",
+    "cov": "../node_modules/.bin/midway-bin cov --timeout=120000"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "replaceParameter": "index.js",
+    "replaceFile": [
+      "_package.json",
+      "*.md",
+      "src/config/config.default.ts"
+    ]
+  },
+  "files": [
+    "boilerplate",
+    "index.js"
+  ]
+}
