@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@midwayjs/web": "^2.0.0",
-    "@midwayjs/decorator": "^2.0.0",
+    "@midwayjs/decorator": "^2.2.0",
     "egg": "^2.0.0",
     "egg-scripts": "^2.10.0"
   },
