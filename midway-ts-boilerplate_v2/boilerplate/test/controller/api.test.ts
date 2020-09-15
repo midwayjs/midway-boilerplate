@@ -17,7 +17,7 @@ describe('test/controller/home.test.ts', () => {
     
     // or use assert
     assert.deepStrictEqual(result.status, 200);
-    assert.deepStrictEqual(result.body.data.id, '123');
+    assert.deepStrictEqual(result.body.data.uid, '123');
 
     // close app
     await close(app);
