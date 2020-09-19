@@ -2,15 +2,6 @@
  * @description User-Service parameters
  */
 export interface IUserOptions {
-  id: number;
+  uid: number;
 }
 
-/**
- * @description User-Service response
- */
-export interface IUserResult {
-  id: number;
-  username: string;
-  phone: string;
-  email?: string;
-}
