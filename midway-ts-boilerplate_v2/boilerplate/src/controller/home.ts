@@ -6,7 +6,7 @@ export class HomeController {
 
   @Get('/')
   async home() {
-    return `Welcome to midwayjs!`;
+    return `Hello Midwayjs!`;
   }
 
 }

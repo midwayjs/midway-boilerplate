@@ -13,11 +13,11 @@ describe('test/controller/home.test.ts', () => {
 
     // use expect by jest
     expect(result.status).toBe(200);
-    expect(result.text).toBe('Welcome to midwayjs!');
+    expect(result.text).toBe('Hello Midwayjs!');
 
     // or use assert
     assert.deepStrictEqual(result.status, 200);
-    assert.deepStrictEqual(result.text, 'Welcome to midwayjs!');
+    assert.deepStrictEqual(result.text, 'Hello Midwayjs!');
 
     // close app
     await close(app);
