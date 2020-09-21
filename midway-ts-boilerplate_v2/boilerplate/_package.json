@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.0.0",
+    "@midwayjs/egg-ts-helper": "^1.0.1",
     "@midwayjs/mock": "^2.2.6",
     "@types/jest": "^26.0.10",
     "@types/node": "14",
@@ -27,7 +28,7 @@
     "start": "egg-scripts start --daemon --title=midway-server-{{name}} --framework=@midwayjs/web --ts",
     "stop": "egg-scripts stop --title=midway-server-{{name}}",
     "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
-    "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
+    "dev": "cross-env ets && NODE_ENV=local midway-bin dev --ts",
     "debug": "cross-env NODE_ENV=local midway-bin debug --ts",
     "test": "midway-bin test",
     "cov": "midway-bin cov",
