@@ -26,7 +26,7 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=midway-server-{{name}} --framework=midway --ts",
+    "start": "egg-scripts start --daemon --title=midway-server-{{name}} --framework=midway",
     "stop": "egg-scripts stop --title=midway-server-{{name}}",
     "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
     "dev": "cross-env ets && NODE_ENV=local midway-bin dev --ts",
