@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@midwayjs/faas": "*"
+    "@midwayjs/faas": "^1.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
-    "@midwayjs/serverless-invoke": "*"
+    "@midwayjs/serverless-invoke": "1"
   },
   "scripts": {
     "build": "f package --skipZip",
