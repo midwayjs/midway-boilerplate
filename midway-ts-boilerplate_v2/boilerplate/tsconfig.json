@@ -12,12 +12,9 @@
     "stripInternal": true,
     "pretty": true,
     "declaration": true,
+    "typeRoots": [ "./typings"],
     "outDir": "dist"
   },
-  "include": [
-    "src",
-    "./typings"
-  ],
   "exclude": [
     "dist",
     "node_modules",
