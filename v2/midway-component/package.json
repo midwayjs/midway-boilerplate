@@ -1,0 +1,19 @@
+{
+  "name": "midway-boilerplate-v2-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "../../node_modules/.bin/midway-bin test --timeout=120000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "replaceFile": [
+      "_package.json",
+      "*.md"
+    ]
+  }
+}
