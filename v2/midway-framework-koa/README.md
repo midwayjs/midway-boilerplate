@@ -17,8 +17,7 @@ $ open http://localhost:7001/
 ### Deploy
 
 ```bash
-$ npm start
-$ npm stop
+$ npm start // 或者用户通过pm2方式启动，参考https://www.yuque.com/midwayjs/midway_v2/deployment#JAigf
 ```
 
 ### npm scripts
