@@ -18,7 +18,6 @@ $ open http://localhost:7001/
 
 ```bash
 $ npm start
-$ npm stop
 ```
 
 ### 内置指令

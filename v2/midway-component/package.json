@@ -1,5 +1,5 @@
 {
-  "name": "midway-boilerplate-v2-component",
+  "name": "@midwayjs-examples/component",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "boilerplateConfig": {
-    "root": "boilerplate",
-    "replaceFile": [
-      "_package.json",
-      "*.md"
-    ]
+    "root": "boilerplate"
   }
 }

@@ -1,17 +1,16 @@
 {
-  "name": "{{name}}",
+  "name": "@midwayjs-examples/applicaiton-express",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "dependencies": {
-    "@midwayjs/web": "^2.3.0",
+    "@midwayjs/express": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
-    "egg": "^2.0.0",
-    "egg-scripts": "^2.10.0"
+    "@midwayjs/bootstrap": "^2.3.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.0.0",
-    "@midwayjs/egg-ts-helper": "^1.0.1",
+    "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "^2.3.0",
     "@types/jest": "^26.0.10",
     "@types/node": "14",
@@ -25,25 +24,30 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=midway-server-{{name}} --framework=@midwayjs/web",
-    "stop": "egg-scripts stop --title=midway-server-{{name}}",
+    "start": "NODE_ENV=production node ./bootstrap.js",
     "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
-    "dev": "cross-env ets && cross-env NODE_ENV=local midway-bin dev --ts",
+    "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
     "test": "midway-bin test",
     "cov": "midway-bin cov",
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
-    "build": "midway-bin build -c"
+    "build": "midway-bin build -c",
+    "check": "luckyeye"
   },
   "midway-bin-clean": [
     ".vscode/.tsbuildinfo",
     "dist"
   ],
+  "midway-luckyeye": {
+    "packages": [
+      "midway_v2"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "{{author}}",
+  "author": "anonymous",
   "license": "MIT"
 }

@@ -14,8 +14,6 @@
     "root": "boilerplate",
     "replaceParameter": "index.js",
     "replaceFile": [
-      "_package.json",
-      "*.md",
       "src/config/config.default.ts"
     ]
   },
