@@ -1,7 +1,6 @@
 {
   "packages": [
     "faas-*",
-    "midway-*",
     "v1/*",
     "v2/*"
   ],
