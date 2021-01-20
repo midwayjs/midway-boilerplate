@@ -1,4 +1,4 @@
-# {{name}}
+# my_midway_project
 
 ## QuickStart
 
@@ -18,7 +18,6 @@ $ open http://localhost:7001/
 
 ```bash
 $ npm start
-$ npm stop
 ```
 
 ### npm scripts
