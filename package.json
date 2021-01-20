@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "devDependencies": {
     "@types/node": "^10.12.18",
+    "@types/jest": "^26.0.10",
     "fs-extra": "^8.1.0",
     "lerna": "^3.14.1",
     "lerna-relinker": "^1.4.0",
-    "light-generator": "^1.1.0"
+    "light-generator": "^1.1.0",
+    "@midwayjs/cli": "^1.0.0"
   },
   "scripts": {
     "bootstrap": "lerna run bootstrap",

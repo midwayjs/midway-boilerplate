@@ -6,19 +6,23 @@
     "type": "git",
     "url": "http://github.com/midwayjs/midway-boilerplate.git"
   },
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  },
+  "devDependencies": {
+    "@midwayjs/cli": "^1.0.0"
+  },
   "scripts": {
-    "test": "../node_modules/.bin/midway-bin test --timeout=120000",
-    "cov": "../node_modules/.bin/midway-bin cov --timeout=120000"
+    "test": "midway-bin test",
+    "cov": "midway-bin cov"
   },
   "boilerplateConfig": {
     "root": "boilerplate",
-    "replaceParameter": "index.js",
-    "replaceFile": [
-      "src/config/config.default.ts"
-    ]
+    "afterAll": "after.js"
   },
   "files": [
     "boilerplate",
-    "index.js"
+    "index.js",
+    "after.js"
   ]
 }
