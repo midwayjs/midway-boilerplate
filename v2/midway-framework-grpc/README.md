@@ -1,3 +1,3 @@
-# midway express boilerplate
+# midway grpc boilerplate
 
-midway for express 脚手架。
+midway for grpc 脚手架。
