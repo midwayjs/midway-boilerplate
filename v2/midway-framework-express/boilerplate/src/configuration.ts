@@ -1,12 +1,12 @@
 import { App, Configuration } from '@midwayjs/decorator';
 import { ILifeCycle } from '@midwayjs/core';
-import { IMidwayExpressApplication } from '@midwayjs/express';
+import { Application } from '@midwayjs/express';
 
 @Configuration()
 export class ContainerLifeCycle implements ILifeCycle {
 
   @App()
-  app: IMidwayExpressApplication;
+  app: Application;
 
   async onReady() {
     // this.app.use(function (req, res, next) {
