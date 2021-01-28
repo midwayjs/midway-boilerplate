@@ -1,12 +1,12 @@
 import { Inject, Controller, Post, Provide, Query } from '@midwayjs/decorator';
-import { IMidwayExpressContext } from '@midwayjs/express';
+import { Context } from '@midwayjs/express';
 import { UserService } from '../service/user';
 
 @Provide()
 @Controller('/api')
 export class APIController {
   @Inject()
-  ctx: IMidwayExpressContext;
+  ctx: Context;
 
   @Inject()
   userService: UserService;

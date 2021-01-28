@@ -1,4 +1,4 @@
-const WebFramework = require('@midwayjs/koa').Framework;
+const WebFramework = require('@midwayjs/web').Framework;
 const web = new WebFramework().configure({
   port: 7001,
 });
