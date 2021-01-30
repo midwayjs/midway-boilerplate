@@ -1,6 +1,7 @@
 import { Configuration, App } from '@midwayjs/decorator';
 import { ILifeCycle } from '@midwayjs/core';
 import { Application } from '@midwayjs/koa';
+import * as bodyParser from 'koa-bodyparser';
 
 @Configuration()
 export class ContainerLifeCycle implements ILifeCycle {
@@ -8,9 +9,7 @@ export class ContainerLifeCycle implements ILifeCycle {
   app: Application;
 
   async onReady() {
-    this.app.use(async (ctx, next) => {
-      console.log(`url: ${ctx.path}`);
-      await next();
-    });
+    // bodyparser options see https://github.com/koajs/bodyparser
+    this.app.use(bodyParser());
   }
 }
