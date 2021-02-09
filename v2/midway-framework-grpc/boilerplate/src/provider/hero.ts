@@ -1,11 +1,17 @@
-import { GrpcMethod, MSProviderType, Provider, Provide, Inject, Init } from '@midwayjs/decorator';
+import {
+  GrpcMethod,
+  MSProviderType,
+  Provider,
+  Provide,
+  Inject,
+  Init,
+} from '@midwayjs/decorator';
 import { helloworld, hero } from '../interface';
 import { Clients } from '@midwayjs/grpc';
 
 @Provide()
 @Provider(MSProviderType.GRPC, { package: 'hero' })
 export class HeroService implements hero.HeroService {
-
   @Inject('grpc:clients')
   grpcClients: Clients;
 
@@ -13,13 +19,15 @@ export class HeroService implements hero.HeroService {
 
   @Init()
   async init() {
-    this.greeterService = this.grpcClients.getService<helloworld.Greeter>('helloworld.Greeter');
+    this.greeterService = this.grpcClients.getService<helloworld.Greeter>(
+      'helloworld.Greeter'
+    );
   }
 
   @GrpcMethod()
   async findOne(data) {
     const result = await this.greeterService.sayHello({
-      name: 'harry'
+      name: 'harry',
     });
     return {
       id: 1,

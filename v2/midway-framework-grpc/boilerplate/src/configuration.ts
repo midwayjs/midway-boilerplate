@@ -3,12 +3,7 @@ import * as grpc from '@midwayjs/grpc';
 import { join } from 'path';
 
 @Configuration({
-  imports: [
-    grpc
-  ],
-  importConfigs: [
-    join(__dirname, './config'),
-  ]
+  imports: [grpc],
+  importConfigs: [join(__dirname, './config')],
 })
-export class AutoConfiguration {
-}
+export class AutoConfiguration {}

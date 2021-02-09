@@ -1,4 +1,5 @@
-const{ Framework } = require('@midwayjs/grpc');
+const { join } = require('path');
+const { Framework } = require('@midwayjs/grpc');
 const grpcService = new Framework().configure({
   services: [
     {
@@ -8,8 +9,8 @@ const grpcService = new Framework().configure({
     {
       protoPath: join(__dirname, 'proto/helloworld.proto'),
       package: 'helloworld',
-    }
-  ]
+    },
+  ],
 });
 
 const { Bootstrap } = require('@midwayjs/bootstrap');

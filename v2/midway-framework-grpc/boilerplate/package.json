@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.0.0",
+    "@midwayjs/grpc-helper": "^1.0.0",
     "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "^2.3.0",
     "@types/jest": "^26.0.10",
@@ -26,14 +27,15 @@
   },
   "scripts": {
     "start": "NODE_ENV=production node ./bootstrap.js",
-    "dev": "cross-env NODE_ENV=local midway-bin dev --ts --entryFlie=bootstrap.js",
+    "dev": "cross-env NODE_ENV=local midway-bin dev --ts --entryFile=bootstrap.js",
     "test": "midway-bin test --ts",
     "cov": "midway-bin cov --ts",
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
     "build": "midway-bin build -c",
-    "check": "luckyeye"
+    "check": "luckyeye",
+    "tsproto": "tsproto --path proto --output src/interface.ts"
   },
   "midway-bin-clean": [
     ".vscode/.tsbuildinfo",
