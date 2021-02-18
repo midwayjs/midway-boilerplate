@@ -4,7 +4,7 @@ import {
   Provide,
   GrpcMethod,
 } from '@midwayjs/decorator';
-import { helloworld } from '../interface';
+import { helloworld } from '../domain/helloworld';
 
 /**
  * package helloworld

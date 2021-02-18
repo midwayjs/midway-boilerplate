@@ -6,7 +6,8 @@ import {
   Inject,
   Init,
 } from '@midwayjs/decorator';
-import { helloworld, hero } from '../interface';
+import { helloworld } from '../domain/helloworld';
+import { hero } from '../domain/hero';
 import { Clients } from '@midwayjs/grpc';
 
 @Provide()
