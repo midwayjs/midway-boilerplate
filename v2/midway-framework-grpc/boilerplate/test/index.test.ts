@@ -1,6 +1,7 @@
 import { createApp, close } from '@midwayjs/mock';
 import { Framework, createGRPCConsumer } from '@midwayjs/grpc';
 import { join } from 'path';
+import { helloworld } from '../src/domain/helloworld';
 
 describe('test/index.test.ts', () => {
 
@@ -9,26 +10,24 @@ describe('test/index.test.ts', () => {
     const app = await createApp<Framework>(baseDir, {
       services: [
         {
-          protoPath: join(baseDir, 'proto', 'hero.proto'),
-          package: 'hero',
-        },
-        {
           protoPath: join(baseDir, 'proto', 'helloworld.proto'),
           package: 'helloworld',
-        }
+        },
+        url: 'localhost:6565'
       ]
     });
 
-    const service: any = await createGRPCConsumer({
-      package: 'hero',
-      protoPath: join(baseDir, 'proto', 'hero.proto'),
+    const service = await createGRPCConsumer<helloworld.GreeterClient>({
+      package: 'helloworld',
+      protoPath: join(baseDir, 'proto', 'hellworld.proto'),
+      url: 'localhost:6565'
     });
 
-    const result = await service.findOne({
-      id: 123
+    const result = await service.sayHello().sendMessage({
+      name: 'harry'
     });
 
-    expect(result).toEqual({ id: 1, name: 'bbbb-Hello harry' })
+    expect(result.message).toEqual('Hello harry')
     await close(app);
   });
 

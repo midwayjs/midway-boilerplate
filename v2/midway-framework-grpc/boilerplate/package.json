@@ -35,7 +35,7 @@
     "ci": "npm run cov",
     "build": "midway-bin build -c",
     "check": "luckyeye",
-    "tsproto": "tsproto --path proto --output src/interface.ts"
+    "generate": "tsproto --path proto --output src/domain"
   },
   "midway-bin-clean": [
     ".vscode/.tsbuildinfo",
