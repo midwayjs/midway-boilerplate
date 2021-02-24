@@ -13,13 +13,13 @@ describe('test/index.test.ts', () => {
           protoPath: join(baseDir, 'proto', 'helloworld.proto'),
           package: 'helloworld',
         },
-        url: 'localhost:6565'
-      ]
+      ],
+      url: 'localhost:6565'
     });
 
     const service = await createGRPCConsumer<helloworld.GreeterClient>({
       package: 'helloworld',
-      protoPath: join(baseDir, 'proto', 'hellworld.proto'),
+      protoPath: join(baseDir, 'proto', 'helloworld.proto'),
       url: 'localhost:6565'
     });
 
@@ -27,7 +27,7 @@ describe('test/index.test.ts', () => {
       name: 'harry'
     });
 
-    expect(result.message).toEqual('Hello harry')
+    expect(result.message).toEqual('Hello harry');
     await close(app);
   });
 
