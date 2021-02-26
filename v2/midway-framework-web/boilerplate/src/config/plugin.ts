@@ -1,4 +1,5 @@
 import { EggPlugin } from 'egg';
 export default {
-  static: false, // default is true
+  logrotator: false,  // disable when use @midwayjs/logger
+  static: false,
 } as EggPlugin;
