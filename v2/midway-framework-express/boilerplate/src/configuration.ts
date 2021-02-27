@@ -1,9 +1,8 @@
 import { App, Configuration } from '@midwayjs/decorator';
-import { ILifeCycle } from '@midwayjs/core';
 import { Application } from '@midwayjs/express';
 
 @Configuration()
-export class ContainerLifeCycle implements ILifeCycle {
+export class ContainerLifeCycle {
 
   @App()
   app: Application;

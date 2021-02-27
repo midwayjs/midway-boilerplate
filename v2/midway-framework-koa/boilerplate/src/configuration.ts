@@ -1,10 +1,9 @@
 import { Configuration, App } from '@midwayjs/decorator';
-import { ILifeCycle } from '@midwayjs/core';
 import { Application } from '@midwayjs/koa';
 import * as bodyParser from 'koa-bodyparser';
 
 @Configuration()
-export class ContainerLifeCycle implements ILifeCycle {
+export class ContainerLifeCycle {
   @App()
   app: Application;
 
