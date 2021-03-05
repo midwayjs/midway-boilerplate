@@ -1,6 +1,6 @@
 {
-  "name": "@midwayjs/faas-boilerplate-standard",
-  "version": "1.0.7",
+  "name": "@midwayjs/serverless-boilerplate-standard",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
