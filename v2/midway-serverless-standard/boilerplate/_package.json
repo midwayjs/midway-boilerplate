@@ -1,8 +1,8 @@
 {
-  "name": "@aliyun/demo-faas-http",
+  "name": "midway_faas_demo",
   "private": true,
   "version": "1.0.2",
-  "description": "Midway Serverless Template for the Serverless Framework and Aliyun",
+  "description": "Midway Serverless Template for the Serverless environment",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
@@ -10,8 +10,8 @@
     "midway"
   ],
   "scripts": {
-    "dev": "midway-bin dev",
-    "test": "midway-bin test",
+    "dev": "midway-bin dev --ts",
+    "test": "midway-bin test --ts",
     "deploy": "midway-bin deploy"
   },
   "dependencies": {
@@ -23,7 +23,7 @@
     "@midwayjs/serverless-app": "^2.8.7",
     "@midwayjs/fcli-plugin-fc": "^1.2.45",
     "@types/jest": "^26.0.10",
-    "@types/node": "14",
+    "@types/node": "^14",
     "typescript": "^4.0.0"
   }
 }
