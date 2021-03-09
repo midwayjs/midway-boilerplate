@@ -1,0 +1,8 @@
+{
+  "name": "@midwayjs/boilerplate-list",
+  "version": "1.0.1",
+  "main": "index.js",
+  "files": [
+    "idnex.js"
+  ]
+}

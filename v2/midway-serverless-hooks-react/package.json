@@ -1,0 +1,20 @@
+{
+  "name": "@midwayjs-examples/serverless-boilerplate-hooks-react",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "../../node_modules/.bin/midway-bin test --timeout=120000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "boilerplateConfig": {
+    "root": "boilerplate"
+  },
+  "files": [
+    "boilerplate",
+    "index.js",
+    "after.js"
+  ]
+}
