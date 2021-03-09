@@ -1,16 +1,15 @@
 import { Inject, Provide, Controller, Get, Post } from '@midwayjs/decorator';
-import { FaaSContext } from '@midwayjs/faas';
+import { Context } from '@midwayjs/faas';
 
 @Provide()
 @Controller('/')
 export class APIService {
 
   @Inject()
-  ctx: FaaSContext;
+  ctx: Context;
 
   @Get('/')
   async hello() {
-    console.log('xxxx');
     return 'Hello Midwayjs';
   }
 
