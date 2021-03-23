@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "midway-bin dev --ts",
     "test": "midway-bin test --ts",
-    "deploy": "midway-bin deploy"
+    "deploy": "UDEV_NODE_ENV=production midway-bin deploy"
   },
   "dependencies": {
     "@midwayjs/faas": "^2.0.0"
