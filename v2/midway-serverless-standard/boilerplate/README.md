@@ -1,1 +1,1 @@
-# Midway Serverless 空触发器示例
+# Midway Serverless http trigger

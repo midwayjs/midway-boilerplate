@@ -1,13 +1,19 @@
 import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
-import { Framework } from '@midwayjs/serverless-app';
-import * as assert from 'assert';
+import { Framework, Application } from '@midwayjs/serverless-app';
 
 describe('test/index.test.ts', () => {
 
-  it('should get /', async () => {
-    // create app
-    const app = await createFunctionApp<Framework>();
+  let app: Application;
 
+  beforeAll(async () => {
+    // create app
+    app = await createFunctionApp<Framework>();
+
+  afterAll(async () => {
+    await close(app);
+  });
+
+  it('should get /', async () => {
     // make request
     const result = await createHttpRequest(app).get('/');
 
@@ -17,10 +23,7 @@ describe('test/index.test.ts', () => {
     
     const result2 = await createHttpRequest(app).get('/get').query({ name: 123 });
     // or use assert
-    assert.deepStrictEqual(result2.status, 200);
-    assert.deepStrictEqual(result2.body.name, '123');
-
-    // close app
-    await close(app);
+    expect(result2.status).toBe(200);
+    expect(result2.body.name).toBe('123');
   });
 });
