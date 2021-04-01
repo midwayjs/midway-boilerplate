@@ -13,7 +13,8 @@
     "pretty": true,
     "declaration": true,
     "typeRoots": [ "./typings", "./node_modules/@types"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "skipLibCheck": true
   },
   "exclude": [
     "dist",

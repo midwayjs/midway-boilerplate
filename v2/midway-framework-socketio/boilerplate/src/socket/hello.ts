@@ -1,5 +1,5 @@
-import { WSController, OnMessage, Provide, OnConnection, Inject } from '@midwayjs/decorator';
-import { SocketRequestEvent } from '../interface';
+import { WSController, OnWSMessage, Provide, OnWSConnection, Inject, WSEmit } from '@midwayjs/decorator';
+import { SocketRequestEvent, SocketResponseEvent } from '../interface';
 import { Context } from '@midwayjs/socketio';
 
 @Provide()
@@ -9,13 +9,17 @@ export class HelloSocketController {
   @Inject()
   ctx: Context;
 
-  @OnConnection()
+  @OnWSConnection()
   async onConnectionMethod() {
     console.log('on client connect', this.ctx.id);
   }
 
-  @OnMessage(SocketRequestEvent.GREET)
-  async home(): Promise<string> {
-    return 'Hello Midwayjs!';
+  @OnWSMessage(SocketRequestEvent.GREET)
+  @WSEmit(SocketResponseEvent.GREET)
+  async gotMessage(data1, data2, data3) {
+    return {
+      name: 'harry',
+      result: data1 + data2 + data3,
+    };
   }
 }

@@ -1,6 +1,6 @@
-import { createApp, close } from '@midwayjs/mock';
+import { createApp, close, createSocketIOClient } from '@midwayjs/mock';
 import { Framework } from '@midwayjs/socketio';
-import * as socketClient from 'socket.io-client';
+import { SocketRequestEvent, SocketResponseEvent } from '../../src/interface';
 
 describe('test/socket/hello.test.ts', () => {
 
@@ -10,14 +10,24 @@ describe('test/socket/hello.test.ts', () => {
       port: 3000
     });
 
-    const socket = socketClient('http://127.0.0.1:3000');
-
-    await new Promise<void>(resolve =>  {
-      socket.on('connect', () => {
-        console.log(socket.id);
-        resolve();
-      });
+    const client = await createSocketIOClient({
+      port: 3000,
     });
+
+    const data = await new Promise(resolve => {
+      client.on(SocketResponseEvent.GREET, resolve);
+      // 发送事件
+      client.send(SocketRequestEvent.GREET, 1, 2, 3);
+    });
+    
+    expect(data).toEqual({
+      name: 'harry',
+      result: 6,
+    });
+
+    // close client
+    await client.close();
+
     // close app
     await close(app);
   });
