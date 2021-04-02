@@ -11,6 +11,8 @@
     "@midwayjs/cli": "^1.0.0"
   },
   "scripts": {
+    "test": "midway-bin test --ts",
+    "cov": "midway-bin cov --ts",
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish"
   },
