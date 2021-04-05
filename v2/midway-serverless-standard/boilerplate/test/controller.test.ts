@@ -1,13 +1,14 @@
 import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Framework, Application } from '@midwayjs/serverless-app';
 
-describe('test/index.test.ts', () => {
+describe('test/controller.test.ts', () => {
 
   let app: Application;
 
   beforeAll(async () => {
     // create app
     app = await createFunctionApp<Framework>();
+  });
 
   afterAll(async () => {
     await close(app);
