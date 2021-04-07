@@ -4,6 +4,8 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "@midwayjs/bootstrap": "^2.3.0",
+    "@midwayjs/core": "^2.3.0",
     "@midwayjs/web": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
     "egg": "^2.0.0",
