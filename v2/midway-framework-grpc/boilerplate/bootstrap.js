@@ -1,4 +1,4 @@
-const{ Framework } = require('@midwayjs/grpc');
+const { Framework } = require('@midwayjs/grpc');
 const { join } = require('path');
 
 const grpcService = new Framework().configure({
