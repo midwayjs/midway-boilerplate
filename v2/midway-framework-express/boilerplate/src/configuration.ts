@@ -3,7 +3,6 @@ import { Application } from '@midwayjs/express';
 
 @Configuration()
 export class ContainerLifeCycle {
-
   @App()
   app: Application;
 
