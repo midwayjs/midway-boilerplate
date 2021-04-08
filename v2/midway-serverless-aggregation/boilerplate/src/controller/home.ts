@@ -4,7 +4,6 @@ import { Context } from '@midwayjs/faas';
 @Provide()
 @Controller('/')
 export class HomeService {
-
   @Inject()
   ctx: Context;
 
