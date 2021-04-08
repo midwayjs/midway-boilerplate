@@ -4,6 +4,7 @@ import { join } from 'path';
 
 @Configuration({
   importConfigs: [join(__dirname, './config/')],
+  conflictCheck: true,
 })
 export class ContainerLifeCycle implements ILifeCycle {
   async onReady() {}

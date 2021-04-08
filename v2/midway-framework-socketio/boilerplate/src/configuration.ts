@@ -2,7 +2,9 @@ import { Configuration, App } from '@midwayjs/decorator';
 import { Application } from '@midwayjs/socketio';
 import { ILifeCycle } from '@midwayjs/core';
 
-@Configuration()
+@Configuration({
+  conflictCheck: true,
+})
 export class ContainerLifeCycle implements ILifeCycle {
   @App()
   app: Application;

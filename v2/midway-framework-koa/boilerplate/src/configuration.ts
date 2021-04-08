@@ -2,7 +2,9 @@ import { Configuration, App } from '@midwayjs/decorator';
 import { Application } from '@midwayjs/koa';
 import * as bodyParser from 'koa-bodyparser';
 
-@Configuration()
+@Configuration({
+  conflictCheck: true,
+})
 export class ContainerLifeCycle {
   @App()
   app: Application;

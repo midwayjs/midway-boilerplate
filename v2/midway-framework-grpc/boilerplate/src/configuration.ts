@@ -1,4 +1,6 @@
 import { Configuration } from '@midwayjs/decorator';
 
-@Configuration()
+@Configuration({
+  conflictCheck: true,
+})
 export class AutoConfiguration {}
