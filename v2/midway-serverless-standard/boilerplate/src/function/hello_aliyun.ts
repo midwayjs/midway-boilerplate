@@ -1,9 +1,14 @@
-import { Provide, Inject, ServerlessTrigger, ServerlessTriggerType, Query } from '@midwayjs/decorator';
+import {
+  Provide,
+  Inject,
+  ServerlessTrigger,
+  ServerlessTriggerType,
+  Query,
+} from '@midwayjs/decorator';
 import { Context, FC } from '@midwayjs/faas';
 
 @Provide()
 export class HelloAliyunService {
-
   @Inject()
   ctx: Context;
 
@@ -13,42 +18,33 @@ export class HelloAliyunService {
   }
 
   @ServerlessTrigger(ServerlessTriggerType.API_GATEWAY, {
-    path: '/api_gateway',
-    method: 'post'
+    path: '/api_gateway_aliyun',
+    method: 'post',
   })
   async handleAPIGatewayEvent(@Query() name) {
-    
+    return `hello ${name}`;
   }
 
   @ServerlessTrigger(ServerlessTriggerType.TIMER, {
-    type: 'cron',           // or every
-    value: '0 0 4 * * *'    // or 1m
+    type: 'cron', // or every
+    value: '0 0 4 * * *', // or 1m
   })
   async handleTimerEvent(event: FC.TimerEvent) {
-    
+    this.ctx.logger.info(event);
+    return 'hello world';
   }
 
   @ServerlessTrigger(ServerlessTriggerType.OS, {
     bucket: 'ossBucketName',
-    events: [
-      'oss:ObjectCreated:*',
-      'oss:ObjectRemoved:DeleteObject'
-    ],
+    events: ['oss:ObjectCreated:*', 'oss:ObjectRemoved:DeleteObject'],
     filter: {
       prefix: 'filterdir/',
-      suffix: '.jpg'
-    }
+      suffix: '.jpg',
+    },
   })
   async handleOSSEvent(event: FC.OSSEvent) {
-    
+    this.ctx.logger.info(event);
+    return 'hello world';
   }
-
-  @ServerlessTrigger(ServerlessTriggerType.MQ, {
-    topic: 'test-topic'
-  })
-  async handleMNSEvent(event: FC.MNSEvent) {
-    
-  }
-
 
 }
