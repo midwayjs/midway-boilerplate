@@ -14,7 +14,7 @@
     "cov": "midway-bin cov --ts",
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
-    "prepare": ""
+    "prepare": "./scripts/prepare.sh"
   },
   "engines": {
     "node": ">=12.0.0"

@@ -18,3 +18,5 @@ do
   npm run lint || exit 1
   npm run test || exit 1
 done
+
+echo 'complete'
