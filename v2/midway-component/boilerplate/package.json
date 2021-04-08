@@ -8,7 +8,8 @@
     "build": "midway-bin build -c",
     "test": "midway-bin test --ts",
     "cov": "midway-bin cov --ts",
-    "ci": "npm run cov"
+    "lint": "mwts check",
+    "lint:fix": "mwts fix"
   },
   "keywords": [],
   "author": "",

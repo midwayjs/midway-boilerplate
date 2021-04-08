@@ -4,9 +4,10 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "@midwayjs/express": "^2.3.0",
+    "@midwayjs/bootstrap": "^2.3.0",
+    "@midwayjs/core": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
-    "@midwayjs/bootstrap": "^2.3.0"
+    "@midwayjs/express": "^2.3.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.0.0",
