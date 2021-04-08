@@ -9,7 +9,8 @@
     "build:server": "mw build",
     "deploy": "npm run build && mw deploy",
     "serve": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "lint": ""
   },
   "dependencies": {
     "@midwayjs/faas": "^2.8.6",
