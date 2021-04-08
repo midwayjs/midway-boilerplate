@@ -29,6 +29,11 @@ module.exports = {
     package: '@midwayjs-examples/serverless-boilerplate-standard',
     group: 'Serverless',
   },
+  'faas-aggr': {
+    desc: 'A serverless http aggregation boilerplate for aliyun fc, tencent scf and so on',
+    package: '@midwayjs-examples/serverless-boilerplate-aggregation',
+    group: 'Serverless',
+  },
   'koa-hooks-react': {
     desc:
       'The next generation of integrated front and back-end application development solutions',
