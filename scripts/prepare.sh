@@ -12,7 +12,7 @@ cwd=`pwd`
 for pkg in $pkgs
 do
   cd $tmpdir
-  echo $cwd/v2/$pkg
+  echo $cwd/$pkg
   $cli new ${pkg#*/} --template=$cwd/$pkg
   cd ${pkg#*/}
   npm run lint || exit 1
