@@ -25,6 +25,7 @@
     "@midwayjs/cli": "^1.2.45",
     "@midwayjs/cli-plugin-faas": "^1.2.45",
     "@midwayjs/mock": "^2.8.7",
+    "@midwayjs/serverless-fc-starter": "^2.3.0",
     "@midwayjs/serverless-app": "^2.8.7",
     "@types/jest": "^26.0.10",
     "@types/node": "14",
