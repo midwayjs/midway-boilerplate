@@ -37,7 +37,6 @@ export class HelloTencentService {
       suffix: '.jpg',
     },
   })
-
   async handleCOSEvent(event: SCF.COSEvent) {
     this.ctx.logger.info(event);
     return 'hello world';
@@ -46,7 +45,6 @@ export class HelloTencentService {
   @ServerlessTrigger(ServerlessTriggerType.MQ, {
     topic: 'test-topic',
   })
-  
   async handleCMQEvent(event: SCF.CMQEvent) {
     this.ctx.logger.info(event);
     return 'hello world';

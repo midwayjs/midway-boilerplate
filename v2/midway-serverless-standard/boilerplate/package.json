@@ -17,13 +17,13 @@
     "lint:fix": "mwts fix"
   },
   "dependencies": {
-    "@midwayjs/faas": "^2.0.0",
     "@midwayjs/core": "^2.3.0",
-    "@midwayjs/decorator": "^2.3.0"
+    "@midwayjs/decorator": "^2.3.0",
+    "@midwayjs/faas": "^2.0.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.2.45",
-    "@midwayjs/fcli-plugin-fc": "^1.2.45",
+    "@midwayjs/cli-plugin-faas": "^1.2.45",
     "@midwayjs/mock": "^2.8.7",
     "@midwayjs/serverless-app": "^2.8.7",
     "@midwayjs/serverless-fc-trigger": "^2.10.3",

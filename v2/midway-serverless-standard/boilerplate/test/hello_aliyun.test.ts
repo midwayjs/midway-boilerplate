@@ -1,7 +1,7 @@
 import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Framework, Application } from '@midwayjs/serverless-app';
 import { HelloAliyunService } from '../src/function/hello_aliyun';
-import { createTimerEvent, createOSSEvent } from '@midwayjs/serverless-fc-trigger';
+import { createTimerEvent, createOSSEvent, createInitializeContext } from '@midwayjs/serverless-fc-trigger';
 import { join } from 'path';
 
 describe('test/hello_aliyun.test.ts', () => {
@@ -12,9 +12,7 @@ describe('test/hello_aliyun.test.ts', () => {
   beforeAll(async () => {
     // create app
     app = await createFunctionApp<Framework>(join(__dirname, '../'), {
-      initContext: {
-        a: 1
-      }
+      initContext: createInitializeContext()
     });
     instance = await app.getServerlessInstance<HelloAliyunService>(HelloAliyunService);
   });

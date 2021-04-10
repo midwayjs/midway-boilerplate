@@ -3,7 +3,7 @@ import {
   Inject,
   ServerlessTrigger,
   ServerlessTriggerType,
-  Query,
+  Body,
 } from '@midwayjs/decorator';
 import { Context, FC } from '@midwayjs/faas';
 
@@ -21,7 +21,7 @@ export class HelloAliyunService {
     path: '/api_gateway_aliyun',
     method: 'post',
   })
-  async handleAPIGatewayEvent(@Query() name) {
+  async handleAPIGatewayEvent(@Body() name) {
     return `hello ${name}`;
   }
 
@@ -46,5 +46,4 @@ export class HelloAliyunService {
     this.ctx.logger.info(event);
     return 'hello world';
   }
-
 }
