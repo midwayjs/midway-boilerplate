@@ -2,14 +2,11 @@
   "name": "midway-boilerplate",
   "version": "1.0.0",
   "devDependencies": {
-    "@midwayjs/cli": "^1.0.0",
-    "@types/jest": "^26.0.10",
-    "@types/node": "^10.12.18",
     "fs-extra": "^8.1.0",
-    "lerna": "^3.14.1"
+    "lerna": "^3.14.1",
+    "light-generator": "^1.9.1"
   },
   "scripts": {
-    "cov": "midway-bin cov --ts",
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
     "test": "./scripts/prepare.sh"
@@ -17,5 +14,9 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "author": "Harry Chen <czy88840616@gmail.com>"
+  "author": "Harry Chen <czy88840616@gmail.com>",
+  "repository": {
+    "url": "https://github.com/midwayjs/midway-boilerplate"
+  },
+  "license": "MIT"
 }
