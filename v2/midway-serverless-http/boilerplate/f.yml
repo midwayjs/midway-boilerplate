@@ -1,0 +1,5 @@
+service:
+  name: midway-faas-service
+
+provider:
+  name: aliyun
