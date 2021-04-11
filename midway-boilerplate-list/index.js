@@ -1,6 +1,6 @@
 module.exports = {
   web: {
-    desc: 'A web application boilerplate with midway',
+    desc: 'A web application boilerplate with midway and Egg.js',
     package: '@midwayjs-examples/applicaiton-web',
     group: 'Traditional Application',
   },
