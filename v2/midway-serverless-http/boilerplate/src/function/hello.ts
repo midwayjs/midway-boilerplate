@@ -8,15 +8,15 @@ import {
 import { Context } from '@midwayjs/faas';
 
 @Provide()
-export class HelloAliyunService {
+export class HelloHTTPService {
   @Inject()
   ctx: Context;
 
   @ServerlessTrigger(ServerlessTriggerType.HTTP, {
-    path: '/api_gateway_aliyun',
+    path: '/',
     method: 'get',
   })
-  async handleHTTPEvent(@Query() name) {
+  async handleHTTPEvent(@Query() name = 'midway') {
     return `hello ${name}`;
   }
 

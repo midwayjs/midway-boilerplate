@@ -1,7 +1,7 @@
 import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Framework, Application } from '@midwayjs/serverless-app';
 
-describe('test/hello_tencent.test.ts', () => {
+describe('test/hello_aliyun.test.ts', () => {
 
   let app: Application;
 
@@ -15,7 +15,7 @@ describe('test/hello_tencent.test.ts', () => {
   });
 
   it('should get result from api gateway trigger', async () => {
-    const result = await createHttpRequest(app).post('/api_gateway_tencent').send({
+    const result = await createHttpRequest(app).get('/').query({
       name: 'zhangting'
     })
     expect(result.text).toEqual('hello zhangting');
