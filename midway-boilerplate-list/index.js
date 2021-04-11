@@ -24,8 +24,13 @@ module.exports = {
     package: '@midwayjs-examples/application-socketio',
     group: 'Traditional Application',
   },
+  'faas-http': {
+    desc: 'A simple serverless boilerplate include http trigger for aliyun fc, tencent scf and so on',
+    package: '@midwayjs-examples/serverless-boilerplate-http',
+    group: 'Serverless',
+  },
   faas: {
-    desc: 'A serverless boilerplate for aliyun fc, tencent scf and so on',
+    desc: 'A serverless boilerplate include all trigger case for aliyun fc, tencent scf and so on',
     package: '@midwayjs-examples/serverless-boilerplate-standard',
     group: 'Serverless',
   },
