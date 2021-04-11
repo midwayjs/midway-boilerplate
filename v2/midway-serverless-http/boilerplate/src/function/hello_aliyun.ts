@@ -3,7 +3,7 @@ import {
   Inject,
   ServerlessTrigger,
   ServerlessTriggerType,
-  Body,
+  Query,
 } from '@midwayjs/decorator';
 import { Context } from '@midwayjs/faas';
 
@@ -14,9 +14,9 @@ export class HelloAliyunService {
 
   @ServerlessTrigger(ServerlessTriggerType.HTTP, {
     path: '/api_gateway_aliyun',
-    method: 'post',
+    method: 'get',
   })
-  async handleHTTPEvent(@Body() name) {
+  async handleHTTPEvent(@Query() name) {
     return `hello ${name}`;
   }
 

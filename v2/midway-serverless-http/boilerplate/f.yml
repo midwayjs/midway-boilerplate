@@ -1,5 +1,5 @@
 service:
-  name: midway-faas-service
+  name: midway-faas-http-service
 
 provider:
   name: aliyun

@@ -1,20 +1,17 @@
 import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Framework, Application } from '@midwayjs/serverless-app';
-import { HelloAliyunService } from '../src/function/hello_aliyun';
 import { createInitializeContext } from '@midwayjs/serverless-fc-trigger';
 import { join } from 'path';
 
 describe('test/hello_aliyun.test.ts', () => {
 
   let app: Application;
-  let instance: HelloAliyunService;
 
   beforeAll(async () => {
     // create app
     app = await createFunctionApp<Framework>(join(__dirname, '../'), {
       initContext: createInitializeContext()
     });
-    instance = await app.getServerlessInstance<HelloAliyunService>(HelloAliyunService);
   });
 
   afterAll(async () => {
@@ -22,7 +19,7 @@ describe('test/hello_aliyun.test.ts', () => {
   });
 
   it('should get result from api gateway trigger', async () => {
-    const result = await createHttpRequest(app).post('/api_gateway_aliyun').send({
+    const result = await createHttpRequest(app).get('/api_gateway_aliyun').query({
       name: 'zhangting'
     })
     expect(result.text).toEqual('hello zhangting');
