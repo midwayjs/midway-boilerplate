@@ -1,11 +1,12 @@
 {
   "packages": [
-    "faas-*",
-    "v1/*",
-    "v2/*"
+    "v2/*",
+    "midway-boilerplate-list"
   ],
   "command": {
     "bootstrap": {
+      "hoist": true,
+      "noCi": true,
       "npmClientArgs": [
         "--no-package-lock"
       ]

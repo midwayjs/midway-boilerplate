@@ -2,5 +2,11 @@
  * @description User-Service parameters
  */
 export interface IUserOptions {
-  uid: number;
+  uid: string;
+}
+
+export interface IGetUserResponse {
+  success: boolean;
+  message: string;
+  data: IUserOptions;
 }

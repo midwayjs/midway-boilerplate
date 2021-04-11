@@ -1,0 +1,22 @@
+{
+  "name": "@midwayjs/faas-boilerplate-standard",
+  "version": "1.0.7",
+  "dependencies": {
+    "light-generator": "1"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "scripts": {
+    "test": "../../node_modules/.bin/midway-bin test --timeout=120000",
+    "cov": "../../node_modules/.bin/midway-bin cov --timeout=120000"
+  },
+  "files": [
+    "boilerplate"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+service:
+  name: midway-faas-aggregation-service
+
+provider:
+  name: aliyun
+
+aggregation:
+  all:
+    functionsPattern:
+       '*'
