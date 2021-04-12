@@ -19,5 +19,4 @@ export class HelloHTTPService {
   async handleHTTPEvent(@Query() name = 'midway') {
     return `hello ${name}`;
   }
-
 }
