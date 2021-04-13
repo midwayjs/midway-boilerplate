@@ -27,8 +27,6 @@ describe('test/socket/hello.test.ts', () => {
     await client.close();
 
     // close app
-    await bootstrap.close({
-      sleep: 1000,
-    });
+    await bootstrap.close();
   });
 });

@@ -3,7 +3,7 @@ import { createHttpRequest, createBootstrap } from '@midwayjs/mock';
 import { Application } from 'egg';
 import { join } from 'path';
 
-xdescribe('test/controller/api.test.ts', () => {
+describe('test/controller/api.test.ts', () => {
   let bootstrap;
   let app: Application;
 
@@ -14,7 +14,9 @@ xdescribe('test/controller/api.test.ts', () => {
   });
 
   afterAll(async () => {
-    await bootstrap.close();
+    await bootstrap.close({
+      sleep: 1000,
+    });
   });
 
   it('should POST /api/get_user', async () => {

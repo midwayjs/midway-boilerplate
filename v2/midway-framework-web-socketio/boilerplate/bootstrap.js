@@ -1,5 +1,5 @@
-const SocketFramework = require('@midwayjs/socketio').Framework;
 const WebFramework = require('@midwayjs/web').Framework;
+const SocketFramework = require('@midwayjs/socketio').Framework;
 
 // main framework
 const web = new WebFramework().configure({

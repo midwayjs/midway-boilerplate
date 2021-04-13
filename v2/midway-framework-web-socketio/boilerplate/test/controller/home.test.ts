@@ -4,7 +4,7 @@ import { Application } from 'egg';
 import { join } from 'path';
 import * as assert from 'assert';
 
-xdescribe('test/controller/home.test.ts', () => {
+describe('test/controller/home.test.ts', () => {
   let bootstrap;
   let app: Application;
 
@@ -15,7 +15,9 @@ xdescribe('test/controller/home.test.ts', () => {
   });
 
   afterAll(async () => {
-    await bootstrap.close();
+    await bootstrap.close({
+      sleep: 1000,
+    });
   });
 
   it('should GET /', async () => {
