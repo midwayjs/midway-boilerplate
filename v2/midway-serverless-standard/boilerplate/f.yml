@@ -1,5 +1,9 @@
 service:
-  name: midway-faas-service
+  name: midway-all
 
 provider:
   name: aliyun
+
+custom:
+  customDomain:
+    domainName: auto

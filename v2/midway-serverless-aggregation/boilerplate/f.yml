@@ -1,5 +1,5 @@
 service:
-  name: midway-faas-aggregation-service
+  name: midway-aggr
 
 provider:
   name: aliyun
@@ -8,3 +8,6 @@ aggregation:
   all:
     functionsPattern:
        '*'
+custom:
+  customDomain:
+    domainName: auto
