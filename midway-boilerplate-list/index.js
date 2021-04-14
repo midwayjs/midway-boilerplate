@@ -1,17 +1,17 @@
 module.exports = {
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
-    package: "@midwayjs-examples/applicaiton-web",
+    package: "@midwayjs-examples/application-web",
     group: "Traditional Application",
   },
   koa: {
     desc: "A web application boilerplate with midway and koa",
-    package: "@midwayjs-examples/applicaiton-koa",
+    package: "@midwayjs-examples/application-koa",
     group: "Traditional Application",
   },
   express: {
     desc: "A web application boilerplate with midway and express",
-    package: "@midwayjs-examples/applicaiton-express",
+    package: "@midwayjs-examples/application-express",
     group: "Traditional Application",
   },
   grpc: {
