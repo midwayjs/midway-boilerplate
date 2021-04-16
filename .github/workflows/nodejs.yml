@@ -25,6 +25,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - uses: nijel/rabbitmq-action@v1.0.0
+      with:
+        rabbitmq version: '5'
     - run: npm install
     - run: npm run bootstrap
     - run: npm run test
