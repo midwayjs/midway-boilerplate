@@ -11,6 +11,14 @@ jobs:
       matrix:
         node-version: [10.x, 12.x, 14.x, 16.x]
 
+    rabbitmq:
+      image: rabbitmq
+      env:
+        RABBITMQ_DEFAULT_USER: craiga
+        RABBITMQ_DEFAULT_PASS: security_is_important
+      ports:
+        - 5672:5672
+
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
