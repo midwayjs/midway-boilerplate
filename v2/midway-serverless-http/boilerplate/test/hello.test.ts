@@ -18,6 +18,6 @@ describe('test/hello_aliyun.test.ts', () => {
     const result = await createHttpRequest(app).get('/').query({
       name: 'zhangting'
     })
-    expect(result.text).toEqual('hello zhangting');
+    expect(result.text).toEqual('Hello zhangting');
   });
 });

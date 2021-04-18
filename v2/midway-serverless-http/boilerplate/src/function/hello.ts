@@ -16,7 +16,7 @@ export class HelloHTTPService {
     path: '/',
     method: 'get',
   })
-  async handleHTTPEvent(@Query() name = 'midway') {
-    return `hello ${name}`;
+  async handleHTTPEvent(@Query() name = 'midwayjs') {
+    return `Hello ${name}`;
   }
 }
