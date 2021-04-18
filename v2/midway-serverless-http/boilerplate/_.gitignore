@@ -13,3 +13,6 @@ run/
 *.un~
 .tsbuildinfo
 .tsbuildinfo.*
+.env_temp
+*.zip
+.serverless
