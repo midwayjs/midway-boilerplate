@@ -51,11 +51,16 @@ module.exports = {
     desc:
       "The next generation of integrated front and back-end application development solutions",
     package: "@midwayjs-examples/applicaiton-hooks-koa-react",
-    group: "Integration Application",
+    group: "Integration",
   },
   "faas-hooks-react": {
     desc: "A serverless boilerplate with react and use hooks",
     package: "@midwayjs-examples/serverless-boilerplate-hooks-react",
     group: "Integration",
+  },
+  "component": {
+    desc: "A midway component boilerplate",
+    package: "@midwayjs-examples/component",
+    group: "Extension",
   },
 };
