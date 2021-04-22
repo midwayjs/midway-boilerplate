@@ -29,6 +29,11 @@ module.exports = {
     package: "@midwayjs-examples/application-web-socketio",
     group: "Traditional Application",
   },
+  "web-grpc": {
+    desc: "Midway web application (Egg.js) with grpc server",
+    package: "@midwayjs-examples/application-web-grpc",
+    group: "Traditional Application",
+  },
   faas: {
     desc:
       "A simple serverless boilerplate include http trigger for aliyun fc, tencent scf and so on",
