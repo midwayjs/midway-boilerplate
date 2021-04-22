@@ -32,7 +32,7 @@
   "scripts": {
     "start": "NODE_ENV=production node ./bootstrap.js",
     "dev": "cross-env ets && cross-env NODE_ENV=local midway-bin dev --ts --entryFile=bootstrap.js",
-    "test": "midway-bin test --ts --entryFile=bootstrap.js --runInBand",
+    "test": "midway-bin test --ts --runInBand",
     "cov": "midway-bin cov --ts",
     "lint": "mwts check",
     "lint:fix": "mwts fix",

@@ -1,7 +1,7 @@
 import { createBootstrap } from '@midwayjs/mock';
 import { createGRPCConsumer } from '@midwayjs/grpc';
 import { join } from 'path';
-import { helloworld } from '../src/domain/helloworld';
+import { helloworld } from '../../src/domain/helloworld';
 
 describe('test/grpc/greeter.test.ts', () => {
 
