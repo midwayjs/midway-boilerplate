@@ -4,25 +4,25 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "@grpc/grpc-js": "^1.2.1",
     "@midwayjs/bootstrap": "^2.3.0",
     "@midwayjs/core": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
-    "@midwayjs/socketio": "^2.3.0",
+    "@midwayjs/grpc": "^2.3.0",
     "@midwayjs/web": "^2.3.0",
     "egg": "^2.0.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.0.0",
     "@midwayjs/egg-ts-helper": "^1.0.1",
+    "@midwayjs/grpc-helper": "^1.0.0",
     "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "^2.3.0",
     "@types/jest": "^26.0.10",
     "@types/node": "14",
-    "@types/socket.io-client": "^1.4.36",
     "cross-env": "^6.0.0",
     "jest": "^26.4.0",
     "mwts": "^1.0.5",
-    "socket.io-client": "^4.0.0",
     "ts-jest": "^26.2.0",
     "typescript": "^4.0.0"
   },
