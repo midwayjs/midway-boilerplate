@@ -15,6 +15,7 @@
     "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "^2.3.0",
     "@types/jest": "^26.0.10",
+    "@types/koa-bodyparser": "^4.3.0",
     "@types/node": "14",
     "cross-env": "^6.0.0",
     "jest": "^26.4.0",
