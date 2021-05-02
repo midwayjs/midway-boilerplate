@@ -10,7 +10,7 @@
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
     "test": "./scripts/prepare.sh",
-    "test_once": "./scripts/prepare.sh v2/midway-framework-web-grpc"
+    "test_once": "./scripts/prepare.sh v2/midway-example-egg-layer"
   },
   "engines": {
     "node": ">=12.0.0"
