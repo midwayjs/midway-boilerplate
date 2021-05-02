@@ -1,0 +1,31 @@
+{
+  "name": "koa-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.4.0"
+  },
+  "devDependencies": {
+    "@midwayjs/cli": "^1.0.0",
+    "jest": "^26.0.0",
+    "supertest": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "node app.js",
+    "test": "jest",
+    "lint": "",
+    "deploy": "midway-bin deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

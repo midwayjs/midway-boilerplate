@@ -1,0 +1,15 @@
+{
+  "name": "@midwayjs-examples/serverless-express-layer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "boilerplateConfig": {
+    "root": "boilerplate"
+  },
+  "files": [
+    "boilerplate",
+    "index.js"
+  ]
+}

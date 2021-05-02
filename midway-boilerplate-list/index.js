@@ -68,4 +68,24 @@ module.exports = {
     package: "@midwayjs-examples/component",
     group: "Extension",
   },
+  "egg-layer": {
+    desc: "A egg-layer component with Egg.js migration boilerplate",
+    package: "@midwayjs-examples/serverless-egg-layer",
+    group: "Serverless Application Migration",
+  },
+  "egg-layer-midway": {
+    desc: "A egg-layer boilerplate for Midway v2 application migration",
+    package: "@midwayjs-examples/serverless-egg-layer-midway",
+    group: "Serverless Application Migration",
+  },
+  "koa-layer": {
+    desc: "A koa-layer boilerplate for koa application migration",
+    package: "@midwayjs-examples/serverless-koa-layer",
+    group: "Serverless Application Migration",
+  },
+  "express-layer": {
+    desc: "A express-layer boilerplate for express application migration",
+    package: "@midwayjs-examples/serverless-express-layer",
+    group: "Serverless Application Migration",
+  }
 };
