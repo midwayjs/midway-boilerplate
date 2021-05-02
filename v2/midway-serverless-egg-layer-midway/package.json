@@ -1,13 +1,13 @@
 {
   "name": "@midwayjs-examples/serverless-egg-layer-midway",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "light-generator": "^1.0.0",
-    "fs-extra": "^9.1.0"
+    "fs-extra": "^9.1.0",
+    "light-generator": "^1.0.0"
   },
   "boilerplateConfig": {
     "root": "boilerplate",
