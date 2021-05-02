@@ -1,0 +1,15 @@
+service:
+  name: midway-demo
+
+provider:
+  name: aliyun
+
+deployType: egg
+
+package:
+  exclude:
+    - package-lock.json   ## 忽略 package-lock.json 文件
+
+custom:
+  customDomain:
+    domainName: auto

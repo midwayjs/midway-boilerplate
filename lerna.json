@@ -1,7 +1,6 @@
 {
   "packages": [
     "v2/*",
-    "v2-example/*",
     "midway-boilerplate-list"
   ],
   "command": {

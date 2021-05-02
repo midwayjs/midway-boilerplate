@@ -1,0 +1,17 @@
+service:
+  name: koa-demo
+
+provider:
+  name: aliyun
+
+deployType: koa
+
+package:
+  include:
+    - public              ## 如果有静态文件目录，写在这里会被自动拷贝
+  exclude:
+    - package-lock.json   ## 忽略 package-lock.json 文件
+
+custom:
+  customDomain:
+    domainName: auto
