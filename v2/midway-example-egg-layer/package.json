@@ -1,5 +1,5 @@
 {
-  "name": "@midwayjs-examples/serverless-demo-egg-layer",
+  "name": "@midwayjs-examples/serverless-egg-layer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
