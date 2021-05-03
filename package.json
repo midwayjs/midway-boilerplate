@@ -10,8 +10,8 @@
   "scripts": {
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
-    "test": "corss-env ./scripts/prepare.sh",
-    "test_once": "corss-env ./scripts/prepare.sh v2/midway-serverless-express-layer"
+    "test": "cross-env ./scripts/prepare.sh",
+    "test_once": "cross-env ./scripts/prepare.sh v2/midway-serverless-express-layer"
   },
   "engines": {
     "node": ">=12.0.0"
