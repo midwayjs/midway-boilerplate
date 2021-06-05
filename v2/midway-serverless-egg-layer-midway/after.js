@@ -1,4 +1,5 @@
 const fse = require('fs-extra');
+const path = require('path');
 
 module.exports = async options => {
   const pkg = require(path.join(options.targetRoot, 'package.json'));
