@@ -5,5 +5,4 @@ import { join } from 'path';
   importConfigs: [join(__dirname, './config')],
   conflictCheck: true,
 })
-export class ContainerLifeCycle {
-}
+export class ContainerLifeCycle {}
