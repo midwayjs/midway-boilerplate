@@ -8,5 +8,8 @@
   "license": "MIT",
   "boilerplateConfig": {
     "root": "boilerplate"
-  }
+  },
+  "files": [
+    "boilerplate"
+  ]
 }
