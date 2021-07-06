@@ -4,6 +4,5 @@ import { Configuration } from '@midwayjs/decorator';
   conflictCheck: true,
 })
 export class ContainerLifeCycle {
-  async onReady() {
-  }
+  async onReady() {}
 }

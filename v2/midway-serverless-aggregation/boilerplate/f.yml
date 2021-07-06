@@ -7,7 +7,7 @@ provider:
 aggregation:
   all:
     functionsPattern:
-       '*'
+      - '*'
 custom:
   customDomain:
     domainName: auto
