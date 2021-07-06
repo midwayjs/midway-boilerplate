@@ -12,15 +12,6 @@ jobs:
         node-version: [10.x, 12.x, 14.x, 16.x]
 
     services:
-      redis:
-        image: redis
-        options: >-
-          --health-cmd "redis-cli ping"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 6379:6379
       rabbitmq:
         image: rabbitmq:latest
         ports:
@@ -48,15 +39,6 @@ jobs:
         node-version: [14.x, 16.x]
 
     services:
-      redis:
-        image: redis
-        options: >-
-          --health-cmd "redis-cli ping"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 6379:6379
       rabbitmq:
         image: rabbitmq:latest
         ports:
