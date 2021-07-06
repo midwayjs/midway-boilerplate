@@ -14,10 +14,12 @@ export class UserConsumer {
   @Inject()
   ctx: Context;
 
-  @RabbitMQListener('demo')
+  @Inject()
+  logger;
+
+  @RabbitMQListener('tasks')
   async gotData(msg: ConsumeMessage) {
-    console.log('=======');
-    console.log(msg.content.toString());
-    this.ctx.channel.ack(msg);
+    this.logger.info('test output =>', msg.content.toString('utf8'));
+    this.ctx.ack(msg);
   }
 }
