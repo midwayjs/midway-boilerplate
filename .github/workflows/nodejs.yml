@@ -11,15 +11,16 @@ jobs:
       matrix:
         node-version: [10.x, 12.x, 14.x, 16.x]
 
-    rabbitmq:
-      image: rabbitmq
-      env:
-        RABBITMQ_DEFAULT_USER: craiga
-        RABBITMQ_DEFAULT_PASS: security_is_important
-      ports:
-        - 5672:5672
-
     services:
+      redis:
+        image: redis
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 6379:6379
       rabbitmq:
         image: rabbitmq:latest
         ports:
@@ -38,7 +39,6 @@ jobs:
         env:
           RABBITMQ_URL: amqp://localhost:${{ job.services.rabbitmq.ports[5672] }}
 
-
   build-windows:
 
     runs-on: windows-latest
@@ -46,6 +46,22 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x]
+
+    services:
+      redis:
+        image: redis
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 6379:6379
+      rabbitmq:
+        image: rabbitmq:latest
+        ports:
+          - 5672/tcp
+        options: --health-cmd "rabbitmqctl node_health_check" --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
       - name: Configure git
@@ -58,3 +74,5 @@ jobs:
       - run: npm install
       - run: npm run bootstrap
       - run: npm run test
+        env:
+          RABBITMQ_URL: amqp://localhost:${{ job.services.rabbitmq.ports[5672] }}
