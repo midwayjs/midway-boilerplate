@@ -3,7 +3,7 @@ import { sleep } from '@midwayjs/decorator';
 import { join } from 'path';
 
 describe('test/consumer/userConsumer.test.ts', () => {
-  it('should test  local server', async () => {
+  it('should test local server', async () => {
     // create a mock queue and channel
     const manager = await createRabbitMQProducer({
       url: process.env.RABBITMQ_URL || 'amqp://localhost'

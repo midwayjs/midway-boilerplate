@@ -7,6 +7,7 @@
     "@midwayjs/bootstrap": "^2.3.0",
     "@midwayjs/core": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
+    "@midwayjs/rabbitmq": "^2.10.6",
     "@types/amqplib": "^0.5.17",
     "amqplib": "^0.7.1"
   },
