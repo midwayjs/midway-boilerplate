@@ -11,7 +11,7 @@
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
     "test": "cross-env ./scripts/prepare.sh",
-    "test_once": "cross-env ./scripts/prepare.sh v2/midway-serverless-express-layer"
+    "test_once": "cross-env ./scripts/prepare.sh v3/midway-framework-koa"
   },
   "engines": {
     "node": ">=12.0.0"
