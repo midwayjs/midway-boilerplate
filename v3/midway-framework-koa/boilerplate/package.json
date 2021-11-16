@@ -11,7 +11,7 @@
     "koa-bodyparser": "^4.3.0"
   },
   "devDependencies": {
-    "@midwayjs/cli": "^1.0.0",
+    "@midwayjs/cli": "^1.2.89",
     "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "beta",
     "@types/jest": "^26.0.10",
