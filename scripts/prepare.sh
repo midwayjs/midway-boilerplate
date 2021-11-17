@@ -20,9 +20,9 @@ then
     echo $cwd/$pkg
     node $generator_script $tmpdir/${pkg#*/} $cwd/$pkg
     cd ${pkg#*/}
-    # npm install
-    # npm run lint --if-present || exit 1
-    # npm run test || exit 1
+    npm install
+    npm run lint --if-present || exit 1
+    npm run test || exit 1
     echo $tmpdir/${pkg#*/}
   done
 
@@ -41,9 +41,9 @@ then
     echo $cwd/$pkg
     node $generator_script $tmpdir/${pkg#*/} $cwd/$pkg
     cd ${pkg#*/}
-    # npm install
-    # npm run lint --if-present || exit 1
-    # npm run test || exit 1
+    npm install
+    npm run lint --if-present || exit 1
+    npm run test || exit 1
     echo $tmpdir/${pkg#*/}
   done
 else
