@@ -87,5 +87,10 @@ module.exports = {
     desc: "A express-layer boilerplate for express application migration",
     package: "@midwayjs-examples/serverless-express-layer",
     group: "Serverless Application Migration",
-  }
+  },
+  "koa-v3": {
+    desc: "A web application boilerplate with midway v3 and koa",
+    package: "@midwayjs-examples/application-koa-v3",
+    group: "Beta",
+  },
 };
