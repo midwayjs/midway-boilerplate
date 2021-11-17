@@ -20,24 +20,30 @@ then
     echo $cwd/$pkg
     node $generator_script $tmpdir/${pkg#*/} $cwd/$pkg
     cd ${pkg#*/}
-    npm install
-    npm run lint --if-present || exit 1
-    npm run test || exit 1
+    # npm install
+    # npm run lint --if-present || exit 1
+    # npm run test || exit 1
     echo $tmpdir/${pkg#*/}
   done
 
   # v3
-  pkgs=`find v3 -maxdepth 1 -mindepth 1`
   cwd=$origin_cwd
+  cd $origin_cwd
+
+  rm -rf $tmpdir
+  mkdir -p $tmpdir
+
+  pkgs=`find v3 -maxdepth 1 -mindepth 1`
+
   for pkg in $pkgs
   do
     cd $tmpdir
     echo $cwd/$pkg
     node $generator_script $tmpdir/${pkg#*/} $cwd/$pkg
     cd ${pkg#*/}
-    npm install
-    npm run lint --if-present || exit 1
-    npm run test || exit 1
+    # npm install
+    # npm run lint --if-present || exit 1
+    # npm run test || exit 1
     echo $tmpdir/${pkg#*/}
   done
 else
