@@ -1,8 +1,7 @@
-import { Inject, Controller, Get, Provide, Query } from '@midwayjs/decorator';
+import { Inject, Controller, Get, Query } from '@midwayjs/decorator';
 import { Context } from '@midwayjs/koa';
-import { UserService } from '../service/user';
+import { UserService } from '../service/user.service';
 
-@Provide()
 @Controller('/api')
 export class APIController {
   @Inject()
