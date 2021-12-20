@@ -6,20 +6,21 @@
   "dependencies": {
     "@midwayjs/bootstrap": "beta",
     "@midwayjs/core": "beta",
+    "@midwayjs/web": "beta",
     "@midwayjs/decorator": "beta",
-    "@midwayjs/koa": "beta"
+    "egg": "^2.0.0"
   },
   "devDependencies": {
-    "@midwayjs/cli": "^1.2.90",
+    "@midwayjs/cli": "^1.0.0",
+    "@midwayjs/egg-ts-helper": "^1.0.1",
     "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "beta",
     "@types/jest": "^26.0.10",
-    "@types/koa-bodyparser": "^4.3.0",
-    "@types/koa-session": "^5.10.4",
     "@types/node": "14",
     "cross-env": "^6.0.0",
-    "jest": "^26.4.0",
+    "egg-mock": "^3.26.0",
     "mwts": "^1.0.5",
+    "jest": "^26.4.0",
     "ts-jest": "^26.2.0",
     "typescript": "^4.0.0"
   },
@@ -27,8 +28,8 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production node ./bootstrap.js",
-    "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
+    "start": "node bootstrap.js",
+    "dev": "cross-env ets && cross-env NODE_ENV=local midway-bin dev --ts",
     "test": "midway-bin test --ts",
     "cov": "midway-bin cov --ts",
     "lint": "mwts check",
@@ -50,6 +51,6 @@
     "type": "git",
     "url": ""
   },
-  "author": "anonymous",
+  "author": "",
   "license": "MIT"
 }
