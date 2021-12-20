@@ -10,6 +10,5 @@ export class ContainerLifeCycle {
   @App()
   app: koa.Application;
 
-  async onReady() {
-  }
+  async onReady() {}
 }
