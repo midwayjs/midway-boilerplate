@@ -1,2 +1,2 @@
 const { Bootstrap } = require('@midwayjs/bootstrap');
-Bootstrap.load(web).run();
+Bootstrap.run();
