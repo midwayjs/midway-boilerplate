@@ -7,8 +7,7 @@
     "@midwayjs/bootstrap": "beta",
     "@midwayjs/core": "beta",
     "@midwayjs/decorator": "beta",
-    "@midwayjs/koa": "beta",
-    "koa-bodyparser": "^4.3.0"
+    "@midwayjs/koa": "beta"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.2.90",
@@ -16,6 +15,7 @@
     "@midwayjs/mock": "beta",
     "@types/jest": "^26.0.10",
     "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-session": "^5.10.4",
     "@types/node": "14",
     "cross-env": "^6.0.0",
     "jest": "^26.4.0",

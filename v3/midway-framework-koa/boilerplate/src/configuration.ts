@@ -1,6 +1,5 @@
 import { Configuration, App } from '@midwayjs/decorator';
 import * as koa from '@midwayjs/koa';
-import * as bodyParser from 'koa-bodyparser';
 import { join } from 'path';
 
 @Configuration({
@@ -12,7 +11,5 @@ export class ContainerLifeCycle {
   app: koa.Application;
 
   async onReady() {
-    // bodyparser options see https://github.com/koajs/bodyparser
-    this.app.useMiddleware(bodyParser());
   }
 }
