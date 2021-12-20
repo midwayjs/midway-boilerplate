@@ -93,4 +93,9 @@ module.exports = {
     package: "@midwayjs-examples/application-koa-v3",
     group: "Beta",
   },
+  "egg-v3": {
+    desc: "A web application boilerplate with midway v3 and egg",
+    package: "@midwayjs-examples/application-web-v3",
+    group: "Beta",
+  },
 };
