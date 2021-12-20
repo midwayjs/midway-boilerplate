@@ -11,6 +11,7 @@
   },
   "files": [
     "boilerplate",
-    "index.js"
+    "index.js",
+    "after.js"
   ]
 }
