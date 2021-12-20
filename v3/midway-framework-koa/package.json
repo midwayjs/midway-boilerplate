@@ -6,6 +6,9 @@
     "type": "git",
     "url": "http://github.com/midwayjs/midway-boilerplate.git"
   },
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  },
   "boilerplateConfig": {
     "root": "boilerplate",
     "afterAll": "after.js"
