@@ -3,8 +3,8 @@ import * as koa from '@midwayjs/koa';
 import * as validate from '@midwayjs/validate';
 import * as info from '@midwayjs/info';
 import { join } from 'path';
-import { DefaultErrorFilter } from './filter/default.filter';
-import { NotFoundFilter } from './filter/notfound.filter';
+// import { DefaultErrorFilter } from './filter/default.filter';
+// import { NotFoundFilter } from './filter/notfound.filter';
 import { ReportMiddleware } from './middleare/report.middleware';
 
 @Configuration({
@@ -22,6 +22,6 @@ export class ContainerLifeCycle {
     // add middleware
     this.app.useMiddleware([ReportMiddleware]);
     // add filter
-    this.app.useFiter([NotFoundFilter, DefaultErrorFilter]);
+    // this.app.useFiter([NotFoundFilter, DefaultErrorFilter]);
   }
 }
