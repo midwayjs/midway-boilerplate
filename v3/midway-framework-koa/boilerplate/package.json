@@ -9,7 +9,8 @@
     "@midwayjs/decorator": "beta",
     "@midwayjs/info": "beta",
     "@midwayjs/koa": "beta",
-    "@midwayjs/logger": "^2.14.0"
+    "@midwayjs/logger": "^2.14.0",
+    "@midwayjs/validate": "beta"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.2.90",

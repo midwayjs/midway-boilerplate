@@ -8,10 +8,14 @@ import { join } from 'path';
 import { ReportMiddleware } from './middleare/report.middleware';
 
 @Configuration({
-  imports: [koa, validate, {
-    component: info,
-    enabledEnvironment: ['local'],
-  }],
+  imports: [
+    koa, 
+    validate, 
+    {
+      component: info,
+      enabledEnvironment: ['local'],
+    }
+  ],
   importConfigs: [join(__dirname, './config')],
 })
 export class ContainerLifeCycle {
