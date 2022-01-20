@@ -9,6 +9,11 @@ module.exports = {
     package: "@midwayjs-examples/application-web-v3",
     group: "v3",
   },
+  "express-v3": {
+    desc: "A web application boilerplate with midway v3(express)",
+    package: "@midwayjs-examples/application-express-v3",
+    group: "v3",
+  },
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
     package: "@midwayjs-examples/application-web",

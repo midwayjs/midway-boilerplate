@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.2.90",
-    "@midwayjs/luckyeye": "^1.0.0",
     "@midwayjs/mock": "beta",
     "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.13",
@@ -34,18 +33,12 @@
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
-    "build": "midway-bin build -c",
-    "check": "luckyeye"
+    "build": "midway-bin build -c"
   },
   "midway-bin-clean": [
     ".vscode/.tsbuildinfo",
     "dist"
   ],
-  "midway-luckyeye": {
-    "packages": [
-      "midway_v2"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": ""
