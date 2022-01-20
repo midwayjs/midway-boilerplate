@@ -4,17 +4,17 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "@midwayjs/bootstrap": "beta",
-    "@midwayjs/core": "beta",
-    "@midwayjs/decorator": "beta",
-    "@midwayjs/info": "beta",
-    "@midwayjs/koa": "beta",
+    "@midwayjs/bootstrap": "^3.0.0",
+    "@midwayjs/core": "^3.0.0",
+    "@midwayjs/decorator": "^3.0.0",
+    "@midwayjs/info": "^3.0.0",
+    "@midwayjs/koa": "^3.0.0",
     "@midwayjs/logger": "^2.14.0",
-    "@midwayjs/validate": "beta"
+    "@midwayjs/validate": "^3.0.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.2.90",
-    "@midwayjs/mock": "beta",
+    "@midwayjs/mock": "^3.0.0",
     "@types/jest": "^26.0.10",
     "@types/koa": "^2.13.4",
     "@types/node": "14",
