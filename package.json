@@ -12,7 +12,7 @@
     "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
     "test": "cross-env ./scripts/prepare.sh",
-    "test_once": "cross-env ./scripts/prepare.sh v3/midway-framework-web"
+    "test_once": "cross-env ./scripts/prepare.sh v3/midway-framework-express"
   },
   "engines": {
     "node": ">=12.0.0"
