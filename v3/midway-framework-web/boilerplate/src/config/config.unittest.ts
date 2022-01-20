@@ -3,5 +3,5 @@ export const security = {
 };
 
 export const egg = {
-  port: undefined,
+  port: null,
 };
