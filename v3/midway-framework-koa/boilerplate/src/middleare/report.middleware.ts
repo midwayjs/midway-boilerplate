@@ -4,7 +4,6 @@ import { NextFunction, Context } from '@midwayjs/koa';
 
 @Middleware()
 export class ReportMiddleware implements IMiddleware<Context, NextFunction> {
-
   resolve() {
     return async (ctx: Context, next: NextFunction) => {
       // 控制器前执行的逻辑

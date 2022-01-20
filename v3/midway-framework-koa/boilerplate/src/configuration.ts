@@ -9,12 +9,12 @@ import { ReportMiddleware } from './middleare/report.middleware';
 
 @Configuration({
   imports: [
-    koa, 
-    validate, 
+    koa,
+    validate,
     {
       component: info,
       enabledEnvironment: ['local'],
-    }
+    },
   ],
   importConfigs: [join(__dirname, './config')],
 })

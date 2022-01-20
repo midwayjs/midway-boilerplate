@@ -1,3 +1,3 @@
 export const express = {
-  port: undefined,
+  port: null,
 };

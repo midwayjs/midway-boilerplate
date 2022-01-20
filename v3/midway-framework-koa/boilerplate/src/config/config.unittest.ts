@@ -1,3 +1,3 @@
 export const koa = {
-  port: undefined,
+  port: null,
 };

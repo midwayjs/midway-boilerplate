@@ -8,6 +8,6 @@ export class DefaultErrorFilter {
     return {
       success: false,
       message: err.message,
-    }
+    };
   }
 }
