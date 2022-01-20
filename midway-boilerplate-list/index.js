@@ -1,4 +1,14 @@
 module.exports = {
+  "koa-v3": {
+    desc: "A web application boilerplate with midway v3(koa)",
+    package: "@midwayjs-examples/application-koa-v3",
+    group: "v3",
+  },
+  "egg-v3": {
+    desc: "A web application boilerplate with midway v3(egg)",
+    package: "@midwayjs-examples/application-web-v3",
+    group: "v3",
+  },
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
     package: "@midwayjs-examples/application-web",
@@ -12,16 +22,6 @@ module.exports = {
   express: {
     desc: "A web application boilerplate with midway and express",
     package: "@midwayjs-examples/application-express",
-    group: "Traditional Application",
-  },
-  grpc: {
-    desc: "Midway grpc boilerplate",
-    package: "@midwayjs-examples/application-grpc",
-    group: "Traditional Application",
-  },
-  socketio: {
-    desc: "Midway socket.io boilerplate",
-    package: "@midwayjs-examples/application-socketio",
     group: "Traditional Application",
   },
   faas: {
@@ -57,35 +57,5 @@ module.exports = {
     desc: "A midway component boilerplate",
     package: "@midwayjs-examples/component",
     group: "Extension",
-  },
-  "egg-layer": {
-    desc: "A egg-layer component with Egg.js migration boilerplate",
-    package: "@midwayjs-examples/serverless-egg-layer",
-    group: "Serverless Application Migration",
-  },
-  "egg-layer-midway": {
-    desc: "A egg-layer boilerplate for Midway v2 application migration",
-    package: "@midwayjs-examples/serverless-egg-layer-midway",
-    group: "Serverless Application Migration",
-  },
-  "koa-layer": {
-    desc: "A koa-layer boilerplate for koa application migration",
-    package: "@midwayjs-examples/serverless-koa-layer",
-    group: "Serverless Application Migration",
-  },
-  "express-layer": {
-    desc: "A express-layer boilerplate for express application migration",
-    package: "@midwayjs-examples/serverless-express-layer",
-    group: "Serverless Application Migration",
-  },
-  "koa-v3": {
-    desc: "A web application boilerplate with midway v3 and koa",
-    package: "@midwayjs-examples/application-koa-v3",
-    group: "Beta",
-  },
-  "egg-v3": {
-    desc: "A web application boilerplate with midway v3 and egg",
-    package: "@midwayjs-examples/application-web-v3",
-    group: "Beta",
   },
 };
