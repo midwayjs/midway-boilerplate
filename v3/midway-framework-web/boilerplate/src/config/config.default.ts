@@ -16,6 +16,6 @@ export default (appInfo: MidwayAppInfo) => {
   // config.security = {
   //   csrf: false,
   // };
-
+ 
   return config;
 };
