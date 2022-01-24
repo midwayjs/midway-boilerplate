@@ -1,0 +1,16 @@
+{
+  "name": "@midwayjs-examples/serverless-boilerplate-http-v3",
+  "version": "1.0.5",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "boilerplateConfig": {
+    "root": "boilerplate"
+  },
+  "files": [
+    "boilerplate",
+    "index.js"
+  ]
+}

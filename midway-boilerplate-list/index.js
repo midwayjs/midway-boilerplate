@@ -4,6 +4,11 @@ module.exports = {
     package: "@midwayjs-examples/application-koa-v3",
     group: "v3",
   },
+  "faas-v3": {
+    desc: "A serverless application boilerplate with midway v3(faas)",
+    package: "@midwayjs-examples/serverless-boilerplate-http-v3",
+    group: "v3",
+  },
   // "egg-v3": {
   //   desc: "A web application boilerplate with midway v3(egg)",
   //   package: "@midwayjs-examples/application-web-v3",
