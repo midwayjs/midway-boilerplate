@@ -5,8 +5,7 @@
     "cross-env": "^7.0.3",
     "fs-extra": "^8.1.0",
     "lerna": "^3.14.1",
-    "light-generator": "^1.9.1",
-    "eslint-plugin-jsdoc": "^37.0.3"
+    "light-generator": "^1.9.1"
   },
   "scripts": {
     "bootstrap": "lerna run bootstrap",
