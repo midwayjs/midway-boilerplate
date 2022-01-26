@@ -1,2 +1,6 @@
 // load when NODE_ENV=production
-export const test = 'test';
+import { MidwayConfig } from '@midwayjs/core';
+
+export default {
+  // test: 'test'
+} as MidwayConfig;
