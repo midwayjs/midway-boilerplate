@@ -1,7 +1,13 @@
-export const security = {
-  csrf: false,
-};
+import { EggAppConfig, PowerPartial } from 'egg';
+import { MidwayConfig } from '@midwayjs/core';
 
-export const egg = {
-  port: null,
-};
+export type DefaultConfig = PowerPartial<EggAppConfig>;
+
+export default  {
+  egg: {
+    port: null,
+  },
+  security: {
+    csrf: false,
+  },
+} as MidwayConfig & DefaultConfig;
