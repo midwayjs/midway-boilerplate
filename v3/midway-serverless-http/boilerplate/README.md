@@ -1,0 +1,1 @@
+# Midway Serverless http trigger

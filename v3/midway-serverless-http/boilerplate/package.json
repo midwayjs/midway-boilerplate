@@ -17,18 +17,18 @@
     "lint:fix": "mwts fix"
   },
   "dependencies": {
-    "@midwayjs/core": "^2.3.0",
-    "@midwayjs/decorator": "^2.3.0",
-    "@midwayjs/faas": "^2.0.0"
+    "@midwayjs/core": "^3.0.0",
+    "@midwayjs/decorator": "^3.0.0",
+    "@midwayjs/faas": "^3.0.0"
   },
   "devDependencies": {
-    "@midwayjs/cli": "^1.2.45",
-    "@midwayjs/cli-plugin-faas": "^1.2.45",
-    "@midwayjs/fcli-plugin-fc": "^1.2.45",
-    "@midwayjs/mock": "^2.8.7",
-    "@midwayjs/serverless-app": "^2.8.7",
-    "@midwayjs/serverless-fc-trigger": "^2.10.3",
-    "@midwayjs/serverless-fc-starter": "^2.10.3",
+    "@midwayjs/cli": "^1.2.90",
+    "@midwayjs/cli-plugin-faas": "^1.2.90",
+    "@midwayjs/fcli-plugin-fc": "^1.2.90",
+    "@midwayjs/mock": "^3.0.0",
+    "@midwayjs/serverless-app": "^3.0.2",
+    "@midwayjs/serverless-fc-starter": "^3.0.2",
+    "@midwayjs/serverless-fc-trigger": "^3.0.2",
     "@types/jest": "^26.0.10",
     "@types/node": "14",
     "cross-env": "^6.0.0",
