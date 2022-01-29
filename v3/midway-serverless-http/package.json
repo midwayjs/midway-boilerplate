@@ -6,11 +6,17 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
   "boilerplateConfig": {
-    "root": "boilerplate"
+    "root": "boilerplate",
+    "afterAll": "after.js"
   },
   "files": [
     "boilerplate",
-    "index.js"
+    "index.js",
+    "after.js"
   ]
 }
