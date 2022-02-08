@@ -9,7 +9,7 @@ export type DefaultConfig = PowerPartial<EggAppConfig>;
  * 请注意，线上环境依旧会有该错误，需要手动开启
  * 如果想了解更多细节，请访问 https://eggjs.org/zh-cn/core/security.html#安全威胁-csrf-的防范
  */
-export default  {
+export default {
   security: {
     csrf: false,
   },
