@@ -26,6 +26,6 @@ export class ContainerLifeCycle {
     // add middleware
     this.app.useMiddleware([ReportMiddleware]);
     // add filter
-    // this.app.useFiter([NotFoundFilter, DefaultErrorFilter]);
+    // this.app.useFilter([NotFoundFilter, DefaultErrorFilter]);
   }
 }
