@@ -7,7 +7,7 @@ describe('test/hello_aliyun.test.ts', () => {
 
   beforeAll(async () => {
     // create app
-    app = await createFunctionApp<ServerlessApp.Framework>(process.cwd(), {}, ServerlessApp);
+    app = await createFunctionApp<ServerlessApp.Framework>();
   });
 
   afterAll(async () => {
