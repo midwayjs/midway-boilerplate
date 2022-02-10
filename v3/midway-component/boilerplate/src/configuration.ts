@@ -6,7 +6,11 @@ import * as DefaultConfig from './config/config.default';
   importConfigs: [
     {
       default: DefaultConfig,
-    }
-  ]
+    },
+  ],
 })
-export class BookConfiguration {}
+export class BookConfiguration {
+  async onReady() {
+    // TODO something
+  }
+}
