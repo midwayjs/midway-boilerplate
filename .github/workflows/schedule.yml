@@ -1,0 +1,45 @@
+name: Boilerplate Daily Run
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+    - cron: "0 14 * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run bootstrap
+    - run: npm run test
+
+  build-windows:
+
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - name: Configure git
+      run: git config --global core.autocrlf false
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run bootstrap
+    - run: npm run test
