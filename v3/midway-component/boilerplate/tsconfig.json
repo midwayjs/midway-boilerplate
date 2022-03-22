@@ -14,6 +14,7 @@
     "noImplicitReturns": false,
     "pretty": true,
     "declaration": true,
+    "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
   "exclude": [
