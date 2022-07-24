@@ -6,4 +6,6 @@ import { join } from 'path';
   importConfigs: [join(__dirname, './config')],
   conflictCheck: true,
 })
-export class ContainerLifeCycle implements ILifeCycle {}
+export class ContainerLifeCycle implements ILifeCycle {
+  async onReady() {}
+}

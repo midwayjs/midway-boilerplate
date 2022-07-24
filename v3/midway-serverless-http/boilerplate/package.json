@@ -1,0 +1,40 @@
+{
+  "name": "midway_faas_project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Midway Serverless for the Serverless environment",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "midway"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
+    "test": "cross-env midway-bin test --ts",
+    "deploy": "cross-env UDEV_NODE_ENV=production midway-bin deploy",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix"
+  },
+  "dependencies": {
+    "@midwayjs/core": "^3.0.0",
+    "@midwayjs/decorator": "^3.0.0",
+    "@midwayjs/faas": "^3.0.0"
+  },
+  "devDependencies": {
+    "@midwayjs/cli": "^1.2.90",
+    "@midwayjs/cli-plugin-faas": "^1.2.90",
+    "@midwayjs/fcli-plugin-fc": "^1.2.90",
+    "@midwayjs/mock": "^3.0.0",
+    "@midwayjs/serverless-app": "^3.0.2",
+    "@midwayjs/serverless-fc-starter": "^3.0.2",
+    "@midwayjs/serverless-fc-trigger": "^3.0.2",
+    "@types/jest": "^26.0.10",
+    "@types/node": "14",
+    "cross-env": "^6.0.0",
+    "jest": "^26.4.0",
+    "mwts": "^1.0.5",
+    "ts-jest": "^26.2.0",
+    "typescript": "~4.6.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@midwayjs-examples/application-express-v3",
+  "version": "1.0.8",
+  "author": "Harry Chen <czy88840616@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "afterAll": "after.js"
+  },
+  "files": [
+    "boilerplate",
+    "index.js",
+    "after.js"
+  ]
+}

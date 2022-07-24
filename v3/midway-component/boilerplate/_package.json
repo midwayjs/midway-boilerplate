@@ -1,0 +1,35 @@
+{
+  "name": "midway-custom-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "cross-env midway-bin build -c",
+    "test": "cross-env midway-bin test --ts",
+    "cov": "cross-env midway-bin cov --ts",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix"
+  },
+  "keywords": [],
+  "author": "",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "index.d.ts"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@midwayjs/cli": "^1.2.38",
+    "@midwayjs/core": "^3.0.0",
+    "@midwayjs/decorator": "^3.0.0",
+    "@midwayjs/mock": "^3.0.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.22",
+    "cross-env": "^6.0.0",
+    "jest": "^27.5.1",
+    "mwts": "^1.0.5",
+    "ts-jest": "^27.1.3",
+    "typescript": "~4.6.0"
+  }
+}
