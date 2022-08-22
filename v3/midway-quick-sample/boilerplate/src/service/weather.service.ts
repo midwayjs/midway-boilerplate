@@ -11,9 +11,12 @@ export class WeatherService {
     }
 
     try {
-      const result = await makeHttpRequest(`http://www.weather.com.cn/data/sk/${cityId}.html`, {
-        dataType: 'json',
-      });
+      const result = await makeHttpRequest(
+        `http://www.weather.com.cn/data/sk/${cityId}.html`,
+        {
+          dataType: 'json',
+        }
+      );
       if (result.status === 200) {
         return result.data;
       }

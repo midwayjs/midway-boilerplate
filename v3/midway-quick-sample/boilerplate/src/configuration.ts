@@ -15,7 +15,7 @@ import { WeatherErrorFilter } from './filter/weather.filter';
       component: info,
       enabledEnvironment: ['local'],
     },
-    view
+    view,
   ],
   importConfigs: [join(__dirname, './config')],
 })
