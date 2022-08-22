@@ -1,5 +1,5 @@
 {
-  "name": "my-midway-project",
+  "name": "midway-quick-sample",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,7 +10,9 @@
     "@midwayjs/info": "^3.0.0",
     "@midwayjs/koa": "^3.0.0",
     "@midwayjs/logger": "^2.14.0",
-    "@midwayjs/validate": "^3.0.0"
+    "@midwayjs/static-file": "^3.4.12",
+    "@midwayjs/validate": "^3.0.0",
+    "@midwayjs/view-nunjucks": "^3.4.12"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.2.90",
@@ -21,6 +23,7 @@
     "cross-env": "^6.0.0",
     "jest": "^26.4.0",
     "mwts": "^1.0.5",
+    "nock": "^13.2.9",
     "ts-jest": "^26.2.0",
     "typescript": "~4.6.0"
   },
