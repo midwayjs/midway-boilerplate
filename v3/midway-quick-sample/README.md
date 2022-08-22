@@ -1,3 +1,3 @@
-# midway koa boilerplate
+# midway quick guide sample boilerplate
 
-midway for koa 脚手架。
+midway 快速上手示例脚手架。

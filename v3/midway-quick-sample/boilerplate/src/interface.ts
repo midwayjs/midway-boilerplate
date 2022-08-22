@@ -1,7 +1,7 @@
 /**
  * @description User-Service parameters
  */
- export interface IUserOptions {
+export interface IUserOptions {
   uid: number;
 }
 
