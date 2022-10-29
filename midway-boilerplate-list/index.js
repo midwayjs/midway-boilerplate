@@ -25,6 +25,11 @@ module.exports = {
     package: "@midwayjs-examples/component-v3",
     group: "v3",
   },
+  "quick-start": {
+    desc: "A midway quickstart exmaple for v3",
+    package: "@midwayjs-examples/application-quick-start-v3",
+    group: "v3",
+  },
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
     package: "@midwayjs-examples/application-web",
