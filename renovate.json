@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "config:base"
-  ],
-  "rangeStrategy": "replace",
-  "includePaths": [
-    "v3/**/boilerplate"
-  ]
-}
