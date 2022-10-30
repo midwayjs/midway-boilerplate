@@ -4,6 +4,6 @@
   ],
   "rangeStrategy": "replace",
   "includePaths": [
-    "v3/**/boilerplate/package.json"
+    "v3/**/boilerplate"
   ]
 }
