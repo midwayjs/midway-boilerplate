@@ -22,7 +22,7 @@
     "@midwayjs/faas": "^3.0.0"
   },
   "devDependencies": {
-    "@midwayjs/cli": "^2.0.0",
+    "@midwayjs/cli": "^1.3.16",
     "@midwayjs/cli-plugin-faas": "^1.2.90",
     "@midwayjs/fcli-plugin-fc": "^1.2.90",
     "@midwayjs/mock": "^3.0.0",

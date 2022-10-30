@@ -11,7 +11,7 @@
     "egg": "^2.0.0"
   },
   "devDependencies": {
-    "@midwayjs/cli": "^2.0.0",
+    "@midwayjs/cli": "^1.3.16",
     "@midwayjs/egg-ts-helper": "^1.0.1",
     "@midwayjs/mock": "^3.0.0",
     "@types/jest": "^29.2.0",
