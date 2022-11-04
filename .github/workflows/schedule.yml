@@ -3,7 +3,6 @@ name: Boilerplate Daily Run
 on:
   schedule:
     - cron: "0 2 * * *"
-    - cron: "0 14 * * *"
 
 jobs:
   build:
