@@ -1,4 +1,4 @@
-import { Catch } from '@midwayjs/decorator';
+import { Catch } from '@midwayjs/core';
 import { Context } from '@midwayjs/koa';
 import { WeatherEmptyDataError } from '../error/weather.error';
 

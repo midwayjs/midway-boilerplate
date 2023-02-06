@@ -1,5 +1,4 @@
-import { Configuration } from '@midwayjs/decorator';
-import { ILifeCycle } from '@midwayjs/core';
+import { Configuration, ILifeCycle } from '@midwayjs/core';
 import * as faas from '@midwayjs/faas';
 import * as defaultConfig from './config/config.default';
 import * as prodConfig from './config/config.prod';

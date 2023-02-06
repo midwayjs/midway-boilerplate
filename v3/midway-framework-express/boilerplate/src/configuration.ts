@@ -1,4 +1,4 @@
-import { Configuration, App } from '@midwayjs/decorator';
+import { Configuration, App } from '@midwayjs/core';
 import * as express from '@midwayjs/express';
 import { join } from 'path';
 

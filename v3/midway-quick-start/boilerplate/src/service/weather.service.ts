@@ -1,5 +1,4 @@
-import { Provide } from '@midwayjs/decorator';
-import { makeHttpRequest } from '@midwayjs/core';
+import { Provide, makeHttpRequest } from '@midwayjs/core';
 import { WeatherInfo } from '../interface';
 import { WeatherEmptyDataError } from '../error/weather.error';
 
