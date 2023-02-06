@@ -4,7 +4,7 @@ import {
   ServerlessTrigger,
   ServerlessTriggerType,
   Query,
-} from '@midwayjs/decorator';
+} from '@midwayjs/core';
 import { Context } from '@midwayjs/faas';
 
 @Provide()
