@@ -16,3 +16,4 @@ run/
 .env_temp
 *.zip
 .serverless
+.s/
