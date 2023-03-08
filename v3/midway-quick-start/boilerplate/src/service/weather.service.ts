@@ -10,14 +10,14 @@ export class WeatherService {
     }
 
     try {
-      const result = await makeHttpRequest(
+      const result = await makeHttpRequest<WeatherInfo>(
         `http://www.weather.com.cn/data/sk/${cityId}.html`,
         {
           dataType: 'json',
         }
       );
       if (result.status === 200) {
-        return result.data;
+        return result.data as WeatherInfo;
       }
     } catch (error) {
       throw new WeatherEmptyDataError(error);
