@@ -1,7 +1,7 @@
 {
   "name": "midway-custom-component",
   "version": "1.0.0",
-  "description": "This is a midway component example",
+  "description": "This is a midway component sample",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "scripts": {
