@@ -1,7 +1,7 @@
 import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Application, Framework } from '@midwayjs/faas';
 
-describe('test/hello_aliyun.test.ts', () => {
+describe('test/index.test.ts', () => {
 
   let app: Application;
 
@@ -14,7 +14,7 @@ describe('test/hello_aliyun.test.ts', () => {
     await close(app);
   });
 
-  it('should get result from api gateway trigger', async () => {
+  it('should get result from http trigger', async () => {
     const result = await createHttpRequest(app).get('/').query({
       name: 'Midway.js'
     })
