@@ -1,0 +1,6 @@
+service:
+  name: midway-http
+
+provider:
+  name: aliyun
+  starter: '@midwayjs/fc-starter'

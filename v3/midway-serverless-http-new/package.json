@@ -1,0 +1,22 @@
+{
+  "name": "@midwayjs-examples/serverless-boilerplate-http-new-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/midway-boilerplate.git"
+  },
+  "boilerplateConfig": {
+    "root": "boilerplate",
+    "afterAll": "after.js"
+  },
+  "files": [
+    "boilerplate",
+    "index.js",
+    "after.js"
+  ]
+}
