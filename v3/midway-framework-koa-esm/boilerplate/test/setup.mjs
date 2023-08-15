@@ -1,10 +1,15 @@
 import { createApp, close } from '@midwayjs/mock';
 
+let app;
 export async function mochaGlobalSetup() {
   // create app
-  global['app'] = await createApp();
+  app = await createApp();
 }
 
 export async function mochaGlobalTeardown() {
-  await close(global['app']);
+  await close(app);
 };
+
+export function getApp() {
+  return app;
+}
