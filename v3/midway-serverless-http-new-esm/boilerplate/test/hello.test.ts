@@ -1,23 +1,15 @@
-import { createFunctionApp, close, createHttpRequest } from '@midwayjs/mock';
-import { Application, Framework } from '@midwayjs/faas';
+import { createHttpRequest } from '@midwayjs/mock';
+import { Application } from '@midwayjs/faas';
+import { getApp } from './setup.mjs';
+import assert from 'assert';
 
 describe('test/index.test.ts', () => {
 
-  let app: Application;
-
-  before(async () => {
-    // create app
-    app = await createFunctionApp<Framework>();
-  });
-
-  after(async () => {
-    await close(app);
-  });
-
   it('should get result from http trigger', async () => {
+    const app: Application = getApp();
     const result = await createHttpRequest(app).get('/').query({
       name: 'Midway.js'
     })
-    expect(result.text).toEqual('Hello Midway.js');
+    assert(result.text === 'Hello Midway.js');
   });
 });

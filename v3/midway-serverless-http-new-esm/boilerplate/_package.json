@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Midway Serverless for the Serverless environment",
-  "main": "index.js",
   "license": "MIT",
   "keywords": [
     "serverless",
@@ -32,6 +31,7 @@
     "@types/node": "16",
     "c8": "^8.0.1",
     "cross-env": "^7.0.3",
+    "mocha": "^10.2.0",
     "mwts": "^1.0.5",
     "mwtsc": "^1.0.0",
     "ts-node": "^10.9.1",
