@@ -18,5 +18,8 @@
     "boilerplate",
     "index.js",
     "after.js"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
