@@ -1,11 +1,7 @@
 {
-  "name": "@midwayjs-examples/serverless-boilerplate-http-new-v3",
+  "name": "@midwayjs-examples/application-koa-esm-v3",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "author": "Harry Chen <czy88840616@gmail.com>",
   "repository": {
     "type": "git",
     "url": "http://github.com/midwayjs/midway-boilerplate.git"

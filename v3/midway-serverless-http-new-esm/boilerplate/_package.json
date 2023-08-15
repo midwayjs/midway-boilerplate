@@ -1,0 +1,43 @@
+{
+  "name": "midway_faas_esm_project",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Midway Serverless for the Serverless environment",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "midway"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/function",
+    "test": "cross-env NODE_ENV=unittest mocha --require test/setup.mjs",
+    "cov": "cross-env c8 --all --reporter=text --reporter=lcovonly npm run test",
+    "deploy": "",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix",
+    "ci": "npm run cov",
+    "build": "cross-env rm -rf dist && tsc"
+  },
+  "dependencies": {
+    "@midwayjs/core": "^3.12.0",
+    "@midwayjs/faas": "^3.12.0",
+    "@midwayjs/fc-starter": "^3.12.0",
+    "@midwayjs/logger": "^2.0.0"
+  },
+  "devDependencies": {
+    "@midwayjs/mock": "^3.12.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16",
+    "c8": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.2.0",
+    "mwts": "^1.0.5",
+    "mwtsc": "^1.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

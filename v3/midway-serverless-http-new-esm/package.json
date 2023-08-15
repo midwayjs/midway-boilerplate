@@ -1,5 +1,5 @@
 {
-  "name": "@midwayjs-examples/serverless-boilerplate-http-new-v3",
+  "name": "@midwayjs-examples/serverless-boilerplate-http-new-esm-v3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
