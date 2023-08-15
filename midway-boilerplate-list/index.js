@@ -4,10 +4,16 @@ module.exports = {
     package: "@midwayjs-examples/application-koa-v3",
     group: "v3",
   },
+  "koa-v3-esm": {
+    desc: "A web application boilerplate with midway v3(koa)",
+    package: "@midwayjs-examples/application-koa-esm-v3",
+    group: "v3-esm",
+  },
   "egg-v3": {
     desc: "A web application boilerplate with midway v3(egg)",
     package: "@midwayjs-examples/application-web-v3",
     group: "v3",
+    hidden: true,
   },
   "express-v3": {
     desc: "A web application boilerplate with midway v3(express)",
@@ -24,6 +30,7 @@ module.exports = {
     desc: "A serverless application boilerplate with midway v3(faas)",
     package: "@midwayjs-examples/serverless-boilerplate-http-v3",
     group: "v3",
+    hidden: true,
   },
   "component-v3": {
     desc: "A midway component boilerplate for v3",
