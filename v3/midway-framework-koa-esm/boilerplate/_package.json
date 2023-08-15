@@ -1,0 +1,49 @@
+{
+  "name": "my-midway-esm-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@midwayjs/bootstrap": "^3.12.0",
+    "@midwayjs/core": "^3.12.0",
+    "@midwayjs/decorator": "^3.12.0",
+    "@midwayjs/info": "^3.12.0",
+    "@midwayjs/koa": "^3.12.0",
+    "@midwayjs/logger": "^2.14.0",
+    "@midwayjs/validate": "^3.12.0"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@midwayjs/mock": "^3.12.0",
+    "@types/koa": "^2.13.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.2.0",
+    "mwts": "^1.0.5",
+    "mwtsc": "^1.0.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node ./bootstrap.js",
+    "dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/app",
+    "test": "NODE_ENV=unittest mocha --require test/setup.mjs",
+    "cov": "nyc npm run test",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix",
+    "ci": "npm run cov",
+    "build": "cross-env rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "anonymous",
+  "license": "MIT"
+}
