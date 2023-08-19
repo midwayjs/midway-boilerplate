@@ -24,7 +24,7 @@ import UnittestConfig from './config/config.unittest.js';
     },
   ],
 })
-export class ContainerLifeCycle {
+export class MainConfiguration {
   @App()
   app: koa.Application;
 

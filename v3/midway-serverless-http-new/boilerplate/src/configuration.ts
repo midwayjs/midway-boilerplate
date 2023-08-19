@@ -13,6 +13,6 @@ import * as prodConfig from './config/config.prod';
   ],
   conflictCheck: true,
 })
-export class ContainerLifeCycle implements ILifeCycle {
+export class MainConfiguration implements ILifeCycle {
   async onReady() {}
 }

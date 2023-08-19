@@ -19,7 +19,7 @@ import { WeatherErrorFilter } from './filter/weather.filter';
   ],
   importConfigs: [join(__dirname, './config')],
 })
-export class ContainerLifeCycle {
+export class MainConfiguration {
   @App()
   app: koa.Application;
 

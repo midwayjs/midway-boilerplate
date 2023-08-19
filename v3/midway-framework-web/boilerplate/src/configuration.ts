@@ -7,7 +7,7 @@ import * as egg from '@midwayjs/web';
   imports: [egg],
   importConfigs: [join(__dirname, './config')],
 })
-export class ContainerLifeCycle implements ILifeCycle {
+export class MainConfiguration implements ILifeCycle {
   @App()
   app: Application;
 

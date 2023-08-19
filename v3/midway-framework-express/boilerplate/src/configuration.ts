@@ -6,7 +6,7 @@ import { join } from 'path';
   imports: [express],
   importConfigs: [join(__dirname, './config')],
 })
-export class ContainerLifeCycle {
+export class MainConfiguration {
   @App()
   app: express.Application;
 

@@ -10,10 +10,9 @@ module.exports = {
     group: "v3-esm",
   },
   "egg-v3": {
-    desc: "A web application boilerplate with midway v3(egg)",
+    desc: "A web application boilerplate with midway v3(egg 2.0)",
     package: "@midwayjs-examples/application-web-v3",
     group: "v3",
-    hidden: true,
   },
   "express-v3": {
     desc: "A web application boilerplate with midway v3(express)",
@@ -25,17 +24,18 @@ module.exports = {
     desc: "A serverless application boilerplate with midway v3(faas)",
     package: "@midwayjs-examples/serverless-boilerplate-http-new-v3",
     group: "v3",
+    hidden: true,
   },
   "faas-v3-ems-new": {
     desc: "A serverless application boilerplate with midway v3(faas)",
     package: "@midwayjs-examples/serverless-boilerplate-http-new-esm-v3",
     group: "v3-esm",
+    hidden: true,
   },
   "faas-v3": {
     desc: "A serverless application boilerplate with midway v3(faas)",
     package: "@midwayjs-examples/serverless-boilerplate-http-v3",
     group: "v3",
-    hidden: true,
   },
   "component-v3": {
     desc: "A midway component boilerplate for v3",
