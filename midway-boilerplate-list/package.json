@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs/boilerplate-list",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "index.js",
   "files": [
     "index.js"
