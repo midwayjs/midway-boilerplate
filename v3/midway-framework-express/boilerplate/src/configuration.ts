@@ -7,7 +7,7 @@ import { join } from 'path';
   importConfigs: [join(__dirname, './config')],
 })
 export class MainConfiguration {
-  @App()
+  @App('express')
   app: express.Application;
 
   async onReady() {}

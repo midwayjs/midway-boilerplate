@@ -19,7 +19,7 @@ import { ReportMiddleware } from './middleware/report.middleware';
   importConfigs: [join(__dirname, './config')],
 })
 export class MainConfiguration {
-  @App()
+  @App('koa')
   app: koa.Application;
 
   async onReady() {

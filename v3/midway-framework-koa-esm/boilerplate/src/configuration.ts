@@ -25,7 +25,7 @@ import UnittestConfig from './config/config.unittest.js';
   ],
 })
 export class MainConfiguration {
-  @App()
+  @App('koa')
   app: koa.Application;
 
   async onReady() {
