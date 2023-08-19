@@ -1,7 +1,8 @@
 {
   "packages": [
     "v3/*",
-    "midway-boilerplate-list"
+    "midway-boilerplate-list",
+    "create-midway"
   ],
   "command": {
     "bootstrap": {
@@ -12,5 +13,6 @@
       ]
     }
   },
+  "npmClient": "npm",
   "version": "independent"
 }

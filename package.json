@@ -4,14 +4,16 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "fs-extra": "^8.1.0",
-    "lerna": "^3.14.1",
-    "light-generator": "^1.9.1"
+    "light-generator": "^1.9.1",
+    "@vercel/ncc": "0.36.1",
+    "lerna": "^7.1.3",
+    "zx": "^7.2.3"
   },
   "scripts": {
-    "bootstrap": "lerna run bootstrap",
     "release": "lerna publish",
     "test": "cross-env ./scripts/prepare.sh",
-    "test_once": "cross-env ./scripts/prepare.sh v3/midway-serverless-http-new-esm"
+    "test_once": "cross-env ./scripts/prepare.sh v3/midway-serverless-http-new-esm",
+    "build": "lerna run build"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -20,5 +22,10 @@
   "repository": {
     "url": "https://github.com/midwayjs/midway-boilerplate"
   },
+  "workspaces": [
+    "v3/*",
+    "midway-boilerplate-list",
+    "create-midway"
+  ],
   "license": "MIT"
 }
