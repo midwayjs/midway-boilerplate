@@ -1,6 +1,6 @@
 import { createHttpRequest } from '@midwayjs/mock';
 import { Application } from '@midwayjs/faas';
-import { getApp } from './setup.mjs';
+import { getApp } from './setup.js';
 import assert from 'assert';
 
 describe('test/index.test.ts', () => {

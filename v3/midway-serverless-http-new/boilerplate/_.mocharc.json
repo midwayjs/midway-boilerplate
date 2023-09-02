@@ -1,5 +1,6 @@
 {
   "extension": ["ts"],
+  "node-option": ["no-warnings", "loader=ts-node/register"],
   "spec": ["test/**/*.test.ts"],
-  "require": ["test/setup.cjs"]
+  "require": ["test/setup.ts"]
 }
