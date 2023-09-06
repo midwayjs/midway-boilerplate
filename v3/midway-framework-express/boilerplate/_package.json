@@ -4,14 +4,14 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "@midwayjs/bootstrap": "^3.0.0",
-    "@midwayjs/core": "^3.0.0",
-    "@midwayjs/decorator": "^3.0.0",
-    "@midwayjs/express": "^3.0.0"
+    "@midwayjs/bootstrap": "^3.12.0",
+    "@midwayjs/core": "^3.12.0",
+    "@midwayjs/decorator": "^3.12.0",
+    "@midwayjs/express": "^3.12.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^2.0.0",
-    "@midwayjs/mock": "^3.0.0",
+    "@midwayjs/mock": "^3.12.0",
     "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.13",
     "@types/express-session": "^1.17.4",

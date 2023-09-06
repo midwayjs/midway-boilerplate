@@ -4,16 +4,16 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "@midwayjs/bootstrap": "^3.0.0",
-    "@midwayjs/core": "^3.0.0",
-    "@midwayjs/web": "^3.0.0",
-    "@midwayjs/decorator": "^3.0.0",
+    "@midwayjs/bootstrap": "^3.12.0",
+    "@midwayjs/core": "^3.12.0",
+    "@midwayjs/web": "^3.12.0",
+    "@midwayjs/decorator": "^3.12.0",
     "egg": "^2.0.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^2.0.0",
     "@midwayjs/egg-ts-helper": "^1.0.1",
-    "@midwayjs/mock": "^3.0.0",
+    "@midwayjs/mock": "^3.12.0",
     "@types/jest": "^29.2.0",
     "@types/node": "14",
     "cross-env": "^6.0.0",
