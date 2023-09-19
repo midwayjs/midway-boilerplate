@@ -13,6 +13,8 @@ export class HelloHTTPService {
   ctx: Context;
 
   @ServerlessTrigger(ServerlessTriggerType.HTTP, {
+    functionName: 'hello',
+    name: 'http',
     path: '/',
     method: 'get',
   })
