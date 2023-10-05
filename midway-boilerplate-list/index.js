@@ -19,12 +19,12 @@ module.exports = {
     desc: "A serverless application boilerplate with midway v3(faas)",
     package: "@midwayjs-examples/serverless-boilerplate-http-new-v3",
     group: "v3",
-    hidden: true,
   },
   "faas-v3": {
     desc: "A serverless application boilerplate with midway v3(faas)",
     package: "@midwayjs-examples/serverless-boilerplate-http-v3",
     group: "v3",
+    hidden: true,
   },
   "component-v3": {
     desc: "A midway component boilerplate for v3",
