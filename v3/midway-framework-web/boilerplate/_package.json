@@ -8,6 +8,7 @@
     "@midwayjs/core": "^3.12.0",
     "@midwayjs/web": "^3.12.0",
     "@midwayjs/decorator": "^3.12.0",
+    "@midwayjs/logger": "^2.14.0",
     "egg": "^2.0.0"
   },
   "devDependencies": {
