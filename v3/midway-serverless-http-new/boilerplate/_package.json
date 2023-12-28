@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Midway Serverless for the Serverless environment",
+  "type": "commonjs",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
@@ -11,8 +12,8 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/function --port 7001",
-    "test": "cross-env NODE_ENV=unittest mocha",
-    "cov": "cross-env c8 --all --reporter=text --reporter=lcovonly npm run test",
+    "test": "cross-env NODE_ENV=unittest mocha --require ts-node/register",
+    "cov": "cross-env c8 --include src --all --reporter=text --reporter=lcovonly npm run test",
     "deploy": "",
     "lint": "mwts check",
     "lint:fix": "mwts fix",
@@ -23,7 +24,7 @@
     "@midwayjs/core": "^3.12.0",
     "@midwayjs/faas": "^3.12.0",
     "@midwayjs/fc-starter": "^3.12.0",
-    "@midwayjs/logger": "^2.0.0"
+    "@midwayjs/logger": "^3.1.0"
   },
   "devDependencies": {
     "@midwayjs/mock": "^3.12.0",
