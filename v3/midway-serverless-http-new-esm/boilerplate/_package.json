@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/function",
     "test": "cross-env NODE_ENV=unittest mocha",
-    "cov": "cross-env c8 --all --reporter=text --reporter=lcovonly npm run test",
+    "cov": "cross-env c8 --include src --all --reporter=text --reporter=lcovonly npm run test",
     "deploy": "",
     "lint": "mwts check",
     "lint:fix": "mwts fix",
