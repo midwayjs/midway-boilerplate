@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/function --port 7001",
-    "test": "cross-env NODE_ENV=unittest node -r ts-node/register mocha",
+    "test": "cross-env NODE_ENV=unittest mocha --require ts-node/register",
     "cov": "cross-env c8 --include src --all --reporter=text --reporter=lcovonly npm run test",
     "deploy": "",
     "lint": "mwts check",
