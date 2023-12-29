@@ -11,7 +11,7 @@ export class WeatherService {
 
     try {
       const result = await makeHttpRequest<WeatherInfo>(
-        `http://www.weather.com.cn/data/sk/${cityId}.html`,
+        `https://midwayjs.org/resource/${cityId}.json`,
         {
           dataType: 'json',
         }

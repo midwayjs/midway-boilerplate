@@ -11,7 +11,7 @@
   "scripts": {
     "release": "lerna publish",
     "test": "cross-env ./scripts/prepare.sh",
-    "test_once": "cross-env ./scripts/prepare.sh v3/midway-serverless-http-new",
+    "test_once": "cross-env ./scripts/prepare.sh v3/midway-quick-start",
     "build": "lerna run build"
   },
   "engines": {
