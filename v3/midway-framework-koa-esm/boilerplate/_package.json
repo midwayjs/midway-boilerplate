@@ -37,7 +37,7 @@
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
-    "build": "cross-env rm -rf dist && tsc"
+    "build": "mwtsc --clean-build"
   },
   "repository": {
     "type": "git",
