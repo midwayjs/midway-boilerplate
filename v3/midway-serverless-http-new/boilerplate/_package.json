@@ -18,7 +18,7 @@
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
-    "build": "mwtsc --clean-build"
+    "build": "mwtsc --cleanOutDir"
   },
   "dependencies": {
     "@midwayjs/core": "^3.12.0",

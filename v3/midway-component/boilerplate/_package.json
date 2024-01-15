@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "build": "mwtsc --clean-build",
+    "build": "mwtsc --cleanOutDir",
     "test": "cross-env NODE_ENV=unittest jest",
     "cov": "jest --coverage",
     "lint": "mwts check",
