@@ -4,5 +4,4 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/test/fixtures'],
   coveragePathIgnorePatterns: ['<rootDir>/test/'],
   setupFilesAfterEnv: ['./jest.setup.js'],
-  setupFiles: ['ts-node/register'],
 };
