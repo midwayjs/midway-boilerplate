@@ -36,10 +36,6 @@
     "ci": "npm run cov",
     "build": "mwtsc --cleanOutDir"
   },
-  "midway-bin-clean": [
-    ".vscode/.tsbuildinfo",
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": ""
