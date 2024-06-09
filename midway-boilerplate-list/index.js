@@ -32,7 +32,7 @@ module.exports = {
     group: "v3",
   },
   "quick-start": {
-    desc: "A midway quickstart exmaple for v3",
+    desc: "A midway quickstart example for v3",
     package: "@midwayjs-examples/application-quick-start-v3",
     group: "v3",
   },
