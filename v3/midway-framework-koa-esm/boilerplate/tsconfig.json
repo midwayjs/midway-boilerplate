@@ -2,7 +2,7 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "Node16",
     "moduleResolution": "Node16",
     "esModuleInterop": true,
     "experimentalDecorators": true,
