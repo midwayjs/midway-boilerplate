@@ -3,31 +3,47 @@ name: Node.js CI
 on: [push, pull_request]
 
 jobs:
-  build:
-
+  build-v3:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
-
+        node-version: [18.x]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run test
+    - name: Install dependencies (v3)
+      run: npm install
+    - name: Test (v3)
+      run: npm run test
+      env:
+        PKG_ROOT: v3
 
-  build-windows:
-
-    runs-on: windows-latest
-
+  build-v4:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [20.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies (v4)
+      run: npm install
+    - name: Test (v4)
+      run: npm run test
+      env:
+        PKG_ROOT: v4
 
+  build-v3-windows:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
     - name: Configure git
       run: git config --global core.autocrlf false
@@ -36,5 +52,29 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run test
+    - name: Install dependencies (v3, Windows)
+      run: npm install
+    - name: Test (v3, Windows)
+      run: npm run test
+      env:
+        PKG_ROOT: v3
+
+  build-v4-windows:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+    - name: Configure git
+      run: git config --global core.autocrlf false
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies (v4, Windows)
+      run: npm install
+    - name: Test (v4, Windows)
+      run: npm run test
+      env:
+        PKG_ROOT: v4
