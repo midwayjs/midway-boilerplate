@@ -16,9 +16,9 @@ run_for_pkg() {
   echo $origin_cwd/$pkg_path
   node $generator_script $tmpdir/$pkg_name $origin_cwd/$pkg_path
   cd $pkg_name
-  pnpm install
-  pnpm run lint --if-present || exit 1
-  pnpm run test || exit 1
+  npm install
+  npm run lint --if-present || exit 1
+  npm run test || exit 1
   echo $tmpdir/$pkg_name
 }
 
