@@ -17,7 +17,9 @@ jobs:
     - name: Install dependencies (v3)
       run: npm install
     - name: Test (v3)
-      run: npm run test-v3
+      run: npm run test
+      env:
+        PKG_ROOT: v3
 
   build-v4:
     runs-on: ubuntu-latest
@@ -33,7 +35,9 @@ jobs:
     - name: Install dependencies (v4)
       run: npm install
     - name: Test (v4)
-      run: npm run test-v4
+      run: npm run test
+      env:
+        PKG_ROOT: v4
 
   build-v3-windows:
     runs-on: windows-latest
@@ -51,7 +55,9 @@ jobs:
     - name: Install dependencies (v3, Windows)
       run: npm install
     - name: Test (v3, Windows)
-      run: npm run test-v3
+      run: npm run test
+      env:
+        PKG_ROOT: v3
 
   build-v4-windows:
     runs-on: windows-latest
@@ -69,4 +75,6 @@ jobs:
     - name: Install dependencies (v4, Windows)
       run: npm install
     - name: Test (v4, Windows)
-      run: npm run test-v4
+      run: npm run test
+      env:
+        PKG_ROOT: v4

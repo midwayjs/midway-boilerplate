@@ -8,7 +8,7 @@
     "@midwayjs/core": "^4.0.0-beta.1",
     "@midwayjs/info": "^4.0.0-beta.1",
     "@midwayjs/koa": "^4.0.0-beta.1",
-    "@midwayjs/logger": "^4.0.0-beta.1",
+    "@midwayjs/logger": "^3.1.0",
     "@midwayjs/validation": "^4.0.0-beta.1"
   },
   "devDependencies": {

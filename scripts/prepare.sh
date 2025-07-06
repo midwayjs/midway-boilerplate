@@ -22,25 +22,22 @@ run_for_pkg() {
   echo $tmpdir/$pkg_name
 }
 
-if [ -z "$1" ]
+if [ ! -z "$PKG_ROOT" ] && { [ "$PKG_ROOT" = "v3" ] || [ "$PKG_ROOT" = "v4" ]; }
 then
-  # v3 & v4
   cwd=$origin_cwd
   cd $origin_cwd
-
   rm -rf $tmpdir
   mkdir -p $tmpdir
-
-  for ver in v3 v4
+  pkgs=`find $PKG_ROOT -maxdepth 1 -mindepth 1`
+  for pkg in $pkgs
   do
-    if [ -d "$ver" ]; then
-      pkgs=`find $ver -maxdepth 1 -mindepth 1`
-      for pkg in $pkgs
-      do
-        run_for_pkg $pkg
-      done
-    fi
+    run_for_pkg $pkg
   done
+elif [ -z "$1" ]
+then
+  # 兼容老逻辑，默认不处理
+  echo "请通过 PKG_ROOT 指定目录或传入具体包路径"
+  exit 1
 else
   cwd=$origin_cwd
   cd $tmpdir
