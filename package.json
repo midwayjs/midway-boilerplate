@@ -10,8 +10,10 @@
   },
   "scripts": {
     "release": "lerna publish",
-    "test": "cross-env ./scripts/prepare.sh",
-    "test_once": "cross-env ./scripts/prepare.sh v3/midway-framework-web",
+    "test-v3": "cross-env ./scripts/prepare.sh v3",
+    "test-v4": "cross-env ./scripts/prepare.sh v4",
+    "test-v3-once": "cross-env ./scripts/prepare.sh v3/midway-framework-web",
+    "test-v4-once": "cross-env ./scripts/prepare.sh v4/midway-framework-koa",
     "build": "lerna run build"
   },
   "engines": {

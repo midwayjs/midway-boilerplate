@@ -14,12 +14,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Prepare v3
-      run: scripts/prepare.sh v3
     - name: Install dependencies (v3)
       run: npm install
     - name: Test (v3)
-      run: npm run test
+      run: npm run test-v3
 
   build-v4:
     runs-on: ubuntu-latest
@@ -32,12 +30,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Prepare v4
-      run: scripts/prepare.sh v4
     - name: Install dependencies (v4)
       run: npm install
     - name: Test (v4)
-      run: npm run test
+      run: npm run test-v4
 
   build-v3-windows:
     runs-on: windows-latest
@@ -52,12 +48,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Prepare v3 (Windows)
-      run: scripts/prepare.sh v3
     - name: Install dependencies (v3, Windows)
       run: npm install
     - name: Test (v3, Windows)
-      run: npm run test
+      run: npm run test-v3
 
   build-v4-windows:
     runs-on: windows-latest
@@ -72,9 +66,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Prepare v4 (Windows)
-      run: scripts/prepare.sh v4
     - name: Install dependencies (v4, Windows)
       run: npm install
     - name: Test (v4, Windows)
-      run: npm run test
+      run: npm run test-v4
