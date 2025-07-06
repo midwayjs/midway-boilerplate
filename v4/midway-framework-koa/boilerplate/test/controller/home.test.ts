@@ -5,7 +5,7 @@ describe('test/controller/home.test.ts', () => {
 
   it('should GET /', async () => {
     // create app
-    const app = await createApp<Framework>();
+    const app = await createApp<Framework>(process.cwd());
 
     // make request
     const result = await createHttpRequest(app).get('/');
