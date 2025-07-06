@@ -41,15 +41,22 @@ module.exports = {
     package: "@midwayjs-examples/application-koa-esm-v3",
     group: "v3-esm",
   },
+  "koa-v4": {
+    desc: "A web application boilerplate with midway v4(koa), now in beta",
+    package: "@midwayjs-examples/application-koa-v4",
+    group: "v4(beta)",
+  },
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
     package: "@midwayjs-examples/application-web",
     group: "v2",
+    hidden: true,
   },
   koa: {
     desc: "A web application boilerplate with midway and koa",
     package: "@midwayjs-examples/application-koa",
     group: "v2",
+    hidden: true,
   },
   express: {
     desc: "A web application boilerplate with midway and express",

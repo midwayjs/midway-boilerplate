@@ -1,6 +1,7 @@
 {
   "packages": [
     "v3/*",
+    "v4/*",
     "midway-boilerplate-list",
     "create-midway"
   ],
