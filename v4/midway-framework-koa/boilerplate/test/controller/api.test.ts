@@ -5,7 +5,9 @@ describe('test/controller/home.test.ts', () => {
 
   it('should POST /api/get_user', async () => {
     // create app
-    const app = await createApp<Framework>(process.cwd());
+    const app = await createApp<Framework>({
+      appDir: process.cwd()
+    });
 
     // make request
     const result = await createHttpRequest(app).get('/api/get_user').query({ uid: 123 });
