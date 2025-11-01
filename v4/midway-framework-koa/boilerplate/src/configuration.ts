@@ -1,18 +1,11 @@
-import {
-  Configuration,
-  App,
-  ESModuleFileDetector,
-  IMidwayContainer,
-  ILifeCycle,
-} from '@midwayjs/core';
+import { Configuration, App, CommonJSFileDetector } from '@midwayjs/core';
 import * as koa from '@midwayjs/koa';
 import * as validation from '@midwayjs/validation';
 import * as info from '@midwayjs/info';
-// import { DefaultErrorFilter } from './filter/default.filter.js';
-// import { NotFoundFilter } from './filter/notfound.filter.js';
-import { ReportMiddleware } from './middleware/report.middleware.js';
-import DefaultConfig from './config/config.default.js';
-import UnittestConfig from './config/config.unittest.js';
+import { join } from 'path';
+// import { DefaultErrorFilter } from './filter/default.filter';
+// import { NotFoundFilter } from './filter/notfound.filter';
+import { ReportMiddleware } from './middleware/report.middleware';
 
 @Configuration({
   imports: [
@@ -23,19 +16,14 @@ import UnittestConfig from './config/config.unittest.js';
       enabledEnvironment: ['local'],
     },
   ],
-  importConfigs: [
-    {
-      default: DefaultConfig,
-      unittest: UnittestConfig,
-    },
-  ],
-  detector: new ESModuleFileDetector(),
+  importConfigs: [join(__dirname, './config')],
+  detector: new CommonJSFileDetector(),
 })
-export class MainConfiguration implements ILifeCycle {
+export class MainConfiguration {
   @App('koa')
   app: koa.Application;
 
-  async onReady(container: IMidwayContainer) {
+  async onReady() {
     // add middleware
     this.app.useMiddleware([ReportMiddleware]);
     // add filter
