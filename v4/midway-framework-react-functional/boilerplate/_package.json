@@ -1,0 +1,40 @@
+{
+  "name": "my-midway-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@midwayjs/bootstrap": "^4.0.0-beta.11",
+    "@midwayjs/core": "^4.0.0-beta.11",
+    "@midwayjs/koa": "^4.0.0-beta.11",
+    "@midwayjs/react": "^4.0.0-beta.11",
+    "@midwayjs/web-bridge": "^4.0.0-beta.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@midwayjs/mock": "^4.0.0-beta.11",
+    "@types/node": "20",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "mwts": "^1.3.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "node ./dist/server/bootstrap.js",
+    "build": "npm run build:server && npm run build:web",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build:web": "vite build",
+    "preview": "vite preview",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix"
+  }
+}
