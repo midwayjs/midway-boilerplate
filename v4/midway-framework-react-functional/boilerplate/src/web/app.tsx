@@ -22,15 +22,8 @@ export function App() {
   return (
     <main style={{ fontFamily: 'sans-serif', padding: 24, lineHeight: 1.5 }}>
       <h1>Midway Functional API + React</h1>
-      <p>
-        Current User:{' '}
-        {user ? `${user.name} (${user.id})` : 'Loading...'}
-      </p>
-      {error && (
-        <p style={{ color: 'crimson' }}>
-          Request Error: {error}
-        </p>
-      )}
+      <p>Current User: {user ? `${user.name} (${user.id})` : 'Loading...'}</p>
+      {error && <p style={{ color: 'crimson' }}>Request Error: {error}</p>}
     </main>
   );
 }
