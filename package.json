@@ -11,7 +11,7 @@
   "scripts": {
     "release": "lerna publish",
     "test": "cross-env ./scripts/prepare.sh",
-    "test_once": "cross-env ./scripts/prepare.sh v4/midway-framework-koa-esm",
+    "test_once": "cross-env ./scripts/prepare.sh",
     "build": "lerna run build"
   },
   "engines": {
