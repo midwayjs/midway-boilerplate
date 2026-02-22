@@ -2,7 +2,6 @@ import {
   Configuration,
   App,
   ESModuleFileDetector,
-  IMidwayContainer,
   ILifeCycle,
 } from '@midwayjs/core';
 import * as koa from '@midwayjs/koa';
@@ -35,7 +34,7 @@ export class MainConfiguration implements ILifeCycle {
   @App('koa')
   app: koa.Application;
 
-  async onReady(container: IMidwayContainer) {
+  async onReady() {
     // add middleware
     this.app.useMiddleware([ReportMiddleware]);
     // add filter

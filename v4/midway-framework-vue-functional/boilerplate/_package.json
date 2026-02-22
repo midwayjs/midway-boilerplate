@@ -1,0 +1,37 @@
+{
+  "name": "my-midway-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@midwayjs/bootstrap": "^4.0.0-beta.13",
+    "@midwayjs/core": "^4.0.0-beta.13",
+    "@midwayjs/koa": "^4.0.0-beta.13",
+    "@midwayjs/vue": "^4.0.0-beta.13",
+    "@midwayjs/web-bridge": "^4.0.0-beta.13",
+    "vue": "^3.5.22",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@midwayjs/mock": "^4.0.0-beta.13",
+    "@types/node": "20",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "mwts": "^2.0.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "node ./dist/server/bootstrap.js",
+    "build": "npm run build:server && npm run build:web",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build:web": "vite build",
+    "preview": "vite preview",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix"
+  }
+}
