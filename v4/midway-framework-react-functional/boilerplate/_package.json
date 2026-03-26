@@ -5,17 +5,17 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@midwayjs/bootstrap": "^4.0.0-beta.13",
-    "@midwayjs/core": "^4.0.0-beta.13",
-    "@midwayjs/koa": "^4.0.0-beta.13",
-    "@midwayjs/react": "^4.0.0-beta.13",
-    "@midwayjs/web-bridge": "^4.0.0-beta.13",
+    "@midwayjs/bootstrap": "^4.0.0",
+    "@midwayjs/core": "^4.0.0",
+    "@midwayjs/koa": "^4.0.0",
+    "@midwayjs/react": "^4.0.0",
+    "@midwayjs/web-bridge": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zod": "^3.24.4"
   },
   "devDependencies": {
-    "@midwayjs/mock": "^4.0.0-beta.13",
+    "@midwayjs/mock": "^4.0.0",
     "@types/node": "20",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
