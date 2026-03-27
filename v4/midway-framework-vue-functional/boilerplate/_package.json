@@ -5,16 +5,16 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@midwayjs/bootstrap": "^4.0.0-beta.13",
-    "@midwayjs/core": "^4.0.0-beta.13",
-    "@midwayjs/koa": "^4.0.0-beta.13",
-    "@midwayjs/vue": "^4.0.0-beta.13",
-    "@midwayjs/web-bridge": "^4.0.0-beta.13",
+    "@midwayjs/bootstrap": "^4.0.0",
+    "@midwayjs/core": "^4.0.0",
+    "@midwayjs/koa": "^4.0.0",
+    "@midwayjs/vue": "^4.0.0",
+    "@midwayjs/web-bridge": "^4.0.0",
     "vue": "^3.5.22",
     "zod": "^3.24.4"
   },
   "devDependencies": {
-    "@midwayjs/mock": "^4.0.0-beta.13",
+    "@midwayjs/mock": "^4.0.0",
     "@types/node": "20",
     "@vitejs/plugin-vue": "^5.2.4",
     "mwts": "^2.0.4",

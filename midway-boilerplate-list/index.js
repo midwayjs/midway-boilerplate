@@ -42,24 +42,24 @@ module.exports = {
     group: "v3-esm",
   },
   "koa-v4": {
-    desc: "A web application boilerplate with midway v4(koa), now in beta",
+    desc: "A web application boilerplate with midway v4(koa)",
     package: "@midwayjs-examples/application-koa-v4",
-    group: "v4(beta)",
+    group: "v4",
   },
   "koa-v4-esm": {
-    desc: "A web application boilerplate with midway v4(koa), now in beta",
+    desc: "A web application boilerplate with midway v4(koa)",
     package: "@midwayjs-examples/application-koa-esm-v4",
-    group: "v4(beta)",
+    group: "v4",
   },
   "react-functional-v4": {
-    desc: "A functional web application boilerplate with midway v4(react), now in beta",
+    desc: "A functional web application boilerplate with midway v4(react)",
     package: "@midwayjs-examples/application-react-functional-v4",
-    group: "v4(beta)",
+    group: "v4",
   },
   "vue-functional-v4": {
-    desc: "A functional web application boilerplate with midway v4(vue), now in beta",
+    desc: "A functional web application boilerplate with midway v4(vue)",
     package: "@midwayjs-examples/application-vue-functional-v4",
-    group: "v4(beta)",
+    group: "v4",
   },
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
