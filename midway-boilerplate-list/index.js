@@ -61,6 +61,16 @@ module.exports = {
     package: "@midwayjs-examples/application-vue-functional-v4",
     group: "v4",
   },
+  "quick-start-v4": {
+    desc: "A midway quickstart example for v4",
+    package: "@midwayjs-examples/application-quick-start-v4",
+    group: "v4",
+  },
+  "component-v4": {
+    desc: "A midway component boilerplate for v4",
+    package: "@midwayjs-examples/component-v4",
+    group: "v4",
+  },
   web: {
     desc: "A web application boilerplate with midway and Egg.js",
     package: "@midwayjs-examples/application-web",
