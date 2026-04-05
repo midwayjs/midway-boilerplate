@@ -7,7 +7,7 @@ export default defineConfiguration({
   importConfigs: [
     {
       default: {
-        keys: 'midway-react-functional-key',
+        keys: '{{keys}}',
         koa: {
           globalPrefix: '/api',
           port: 7001,

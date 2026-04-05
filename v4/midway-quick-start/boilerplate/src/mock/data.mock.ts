@@ -3,9 +3,9 @@ import {
   ISimulation,
   App,
   Inject,
-  IMidwayApplication,
   MidwayMockService,
 } from '@midwayjs/core';
+import type { IMidwayApplication } from '@midwayjs/core';
 import { WeatherService } from '../service/weather.service';
 
 @Mock()

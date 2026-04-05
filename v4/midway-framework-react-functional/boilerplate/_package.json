@@ -8,6 +8,7 @@
     "@midwayjs/bootstrap": "^4.0.0",
     "@midwayjs/core": "^4.0.0",
     "@midwayjs/koa": "^4.0.0",
+    "@midwayjs/logger": "^4.0.0",
     "@midwayjs/react": "^4.0.0",
     "@midwayjs/web-bridge": "^4.0.0",
     "react": "^18.3.1",
@@ -30,8 +31,9 @@
   "scripts": {
     "dev": "vite",
     "start": "node ./dist/server/bootstrap.js",
-    "build": "npm run build:server && npm run build:web",
+    "build": "npm run build:server && npm run typecheck:web && npm run build:web",
     "build:server": "tsc -p tsconfig.server.json",
+    "typecheck:web": "tsc --noEmit",
     "build:web": "vite build",
     "preview": "vite preview",
     "lint": "mwts check",
