@@ -7,7 +7,7 @@ export default defineConfiguration({
   importConfigs: [
     {
       default: {
-        keys: 'midway-vue-functional-key',
+        keys: '{{keys}}',
         koa: {
           globalPrefix: '/api',
           port: 7001,
