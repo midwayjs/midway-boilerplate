@@ -19,6 +19,7 @@ run_for_pkg() {
   npm install
   npm run lint --if-present || exit 1
   npm run test --if-present || exit 1
+  npm run build --if-present || exit 1
   echo $tmpdir/$pkg_name
 }
 
