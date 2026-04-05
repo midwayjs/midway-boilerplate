@@ -1,5 +1,5 @@
 import { Catch } from '@midwayjs/core';
-import { Context } from '@midwayjs/koa';
+import type { Context } from '@midwayjs/koa';
 import { WeatherEmptyDataError } from '../error/weather.error';
 
 @Catch(WeatherEmptyDataError)
